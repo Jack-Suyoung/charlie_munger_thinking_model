@@ -37,6 +37,9 @@ theme:
 extra:
   manifest: manifest.json
 
+extra_javascript:
+  - assets/session-tracker.js
+
 plugins:
   - search:
       lang: en
