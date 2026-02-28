@@ -1,6 +1,6 @@
 site_name: 찰리 멍거 멘탈 모델
 site_description: 찰리 멍거 핵심 멘탈 모델 90개 학습 가이드
-site_url: ""
+site_url: https://jack-suyoung.github.io/charlie_munger_thinking_model/
 
 theme:
   name: material
@@ -27,13 +27,20 @@ theme:
     - search.highlight
     - content.tabs.link
     - toc.follow
+  custom_dir: docs/overrides
+  icon:
+    logo: material/brain
   font:
     text: Noto Sans KR
     code: Roboto Mono
 
+extra:
+  manifest: manifest.json
+
 plugins:
   - search:
       lang: en
+  - offline
 
 markdown_extensions:
   - admonition

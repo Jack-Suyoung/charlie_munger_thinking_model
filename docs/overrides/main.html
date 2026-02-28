@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <link rel="manifest" href="{{ config.extra.manifest | url }}">
+  <meta name="theme-color" content="#bf360c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="멘탈 모델">
+  <link rel="apple-touch-icon" href="{{ 'assets/icon-192.png' | url }}">
+{% endblock %}
