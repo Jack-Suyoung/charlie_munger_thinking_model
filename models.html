@@ -1,0 +1,5178 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="찰리 멍거 핵심 멘탈 모델 90개 학습 가이드">
+      
+      
+      
+        <link rel="canonical" href="https://jack-suyoung.github.io/charlie_munger_thinking_model/models.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="checklist.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>90개 멘탈 모델 - 찰리 멍거 멘탈 모델</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#bf360c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="멘탈 모델">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tier-1-tier-2-90" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="index.html" title="찰리 멍거 멘탈 모델" class="md-header__button md-logo" aria-label="찰리 멍거 멘탈 모델" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            찰리 멍거 멘탈 모델
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              90개 멘탈 모델
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="models.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  90개 멘탈 모델
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="checklist.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  마스터 체크리스트
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="sessions/index.html" class="md-tabs__link">
+          
+  
+  
+  세션별 학습
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="찰리 멍거 멘탈 모델" class="md-nav__button md-logo" aria-label="찰리 멍거 멘탈 모델" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg>
+
+    </a>
+    찰리 멍거 멘탈 모델
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    90개 멘탈 모델
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="models.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    90개 멘탈 모델
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        소스 신뢰도 등급 안내
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1-47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 TIER 1 — 멍거 직접 명명·언급 (47개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 TIER 1 — 멍거 직접 명명·언급 (47개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I. 심리학 — 인간 오판의 25가지 심리 경향
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. 심리학 — 인간 오판의 25가지 심리 경향">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reward-punishment-superresponse-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #1 보상·처벌 과잉반응 경향 (Reward &amp; Punishment Superresponse Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-likingloving-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #2 좋아함·사랑 경향 (Liking/Loving Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-dislikinghating-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #3 싫어함·증오 경향 (Disliking/Hating Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-doubt-avoidance-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #4 의심 회피 경향 (Doubt-Avoidance Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-inconsistency-avoidance-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #5 불일치 회피 경향 (Inconsistency-Avoidance Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-curiosity-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #6 호기심 경향 (Curiosity Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-kantian-fairness-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #7 칸트식 공정성 경향 (Kantian Fairness Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-envyjealousy-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #8 시기·질투 경향 (Envy/Jealousy Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-reciprocation-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #9 호혜성 경향 (Reciprocation Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-influence-from-mere-association-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #10 단순 연상 영향 경향 (Influence-from-Mere-Association Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-pain-avoiding-psychological-denial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #11 고통 회피 심리적 부정 (Pain-Avoiding Psychological Denial)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-excessive-self-regard-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #12 과도한 자기 평가 경향 (Excessive Self-Regard Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-deprival-superreaction-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #13 박탈 과잉반응 경향 (Deprival-Superreaction Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-social-proof-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #14 사회적 증거 경향 (Social Proof Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-contrast-misreaction-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #15 대비 오반응 경향 (Contrast-Misreaction Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-stress-influence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #16 스트레스 영향 경향 (Stress-Influence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-availability-misweighing-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #17 가용성 오가중 경향 (Availability-Misweighing Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-use-it-or-lose-it-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #18 사용하지 않으면 잃는 경향 (Use-It-or-Lose-It Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-drug-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #19 약물 오영향 경향 (Drug-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-senescence-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #20 노화 오영향 경향 (Senescence-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-authority-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #21 권위 오영향 경향 (Authority-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-twaddle-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #22 잡담 경향 (Twaddle Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-reason-respecting-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #23 이유 존중 경향 (Reason-Respecting Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lollapalooza-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #24 롤라팔루자 경향 (Lollapalooza Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-pavlovian-associationconditioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #25 파블로프식 연상 조건화 (Pavlovian Association/Conditioning)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-tier-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II. 수학·통계 — Tier 1 (3개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. 수학·통계 — Tier 1 (3개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#30-compound-interest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #30 복리 (Compound Interest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-probability-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #31 확률론 (Probability Theory)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-permutations-combinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #32 순열과 조합 (Permutations &amp; Combinations)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-tier-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III. 물리학 — Tier 1 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="III. 물리학 — Tier 1 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45-critical-mass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #45 임계 질량 (Critical Mass)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-breakpoints-tipping-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #46 임계점·전환점 (Breakpoints / Tipping Points)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-tier-1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IV. 화학 — Tier 1 (1개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. 화학 — Tier 1 (1개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-autocatalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #61 자기 촉매 작용 (Autocatalysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-tier-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        V. 생물학 — Tier 1 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V. 생물학 — Tier 1 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#64-natural-selection-darwinian-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #64 자연선택 (Natural Selection / Darwinian Evolution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-modern-darwinian-synthesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #65 현대 다윈 종합 이론 (Modern Darwinian Synthesis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-tier-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VI. 경제학 — Tier 1 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VI. 경제학 — Tier 1 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-supply-and-demand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #71 수요와 공급 (Supply and Demand)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-opportunity-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #72 기회비용 (Opportunity Cost)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-scale-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #74 규모의 경제 (Scale Economies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-network-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #75 네트워크 효과 (Network Effects)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-competitive-advantage-economic-moat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #77 경쟁우위 / 해자 (Competitive Advantage / Economic Moat)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-incentive-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #82 인센티브 구조 (Incentive Structures)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-mr-market" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #86 미스터 마켓 (Mr. Market)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-tier-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VII. 사고 도구 — Tier 1 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VII. 사고 도구 — Tier 1 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#93-inversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #93 역발상 (Inversion)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-circle-of-competence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #96 능력 범위 (Circle of Competence)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-checklist-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #97 체크리스트 사고 (Checklist Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#98-two-track-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #98 이중 경로 분석 (Two-Track Analysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-multidisciplinary-thinking-latticework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #102 다학문적 사고 / 격자틀 (Multidisciplinary Thinking / Latticework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-decision-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #103 의사결정 나무 (Decision Trees)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#108-man-with-a-hammer-syndrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #108 망치 든 사람 증후군 (Man-with-a-Hammer Syndrome)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 TIER 2 — 멍거 사고 체계 포함, 간접 언급 (43개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟡 TIER 2 — 멍거 사고 체계 포함, 간접 언급 (43개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ii-a-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-A. 수학·통계 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-A. 수학·통계 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-statistics-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #33 통계 및 분포 (Statistics &amp; Distributions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-regression-to-the-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #34 평균으로의 회귀 (Regression to the Mean)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-base-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #35 기본율 / 기저율 (Base Rates)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-expected-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #36 기대값 (Expected Value)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-power-laws-pareto-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #37 멱함수 법칙 / 파레토 법칙 (Power Laws / Pareto Principle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-bayesian-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #38 베이즈 업데이트 (Bayesian Updating)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-margin-of-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #39 안전 마진 (Margin of Safety)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-b-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-B. 물리학·공학 (5개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-B. 물리학·공학 (5개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#47-redundancy-backup-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #47 이중 안전장치 (Redundancy / Backup Systems)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-leverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #48 지렛대 원리 (Leverage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-inertia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #49 관성 (Inertia)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#50-entropy-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #50 엔트로피 (Entropy / Thermodynamics)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #51 균형 (Equilibrium)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-c-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-C. 화학 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-C. 화학 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#62-activation-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #62 활성화 에너지 (Activation Energy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #63 촉매 작용 (Catalysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-d-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-D. 생물학·진화 (5개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-D. 생물학·진화 (5개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#66-ecological-niches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #66 생태적 지위 (Ecological Niches)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-competitive-exclusion-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #67 경쟁적 배제 원리 (Competitive Exclusion Principle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68-red-queen-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #68 붉은 여왕 효과 (Red Queen Effect)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#69-symbiosis-ecosystem-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #69 공생 / 생태계 사고 (Symbiosis / Ecosystem Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #70 적응 (Adaptation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-e-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-E. 경제학·미시경제 (12개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-E. 경제학·미시경제 (12개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#73-comparative-advantage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #73 비교우위 (Comparative Advantage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-creative-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #76 창조적 파괴 (Creative Destruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#78-switching-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #78 전환 비용 (Switching Costs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#79-price-elasticity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #79 가격 탄력성 (Price Elasticity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#80-marginal-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #80 한계 효용 (Marginal Utility)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81-game-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #81 게임 이론 (Game Theory)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-principal-agent-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #83 주인-대리인 문제 (Principal-Agent Problem)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-adverse-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #84 역선택 (Adverse Selection)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-moral-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #85 도덕적 해이 (Moral Hazard)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-intrinsic-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #87 내재가치 (Intrinsic Value)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#91-greshams-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #91 그레셤의 법칙 (Gresham's Law)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-accounting-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #92 회계의 기초 (Accounting Fundamentals)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-f-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-F. 사고 도구·일반 논리 (9개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-F. 사고 도구·일반 논리 (9개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#94-1-first-principles-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #94 제1원칙 사고 (First Principles Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-2-second-order-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #95 2차적 사고 (Second-Order Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-occams-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #99 오컴의 면도날 (Occam's Razor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-hanlons-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #100 핸런의 면도날 (Hanlon's Razor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#101-falsifiability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #101 반증 가능성 / 반증 증거 탐색 (Falsifiability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-survivorship-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #104 생존자 편향 (Survivorship Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-anchoring-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #105 닻 내림 편향 (Anchoring Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106-confirmation-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #106 확증 편향 (Confirmation Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-hindsight-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #107 사후 확신 편향 (Hindsight Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-g-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-G. 사회학·조직행동 (1개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-G. 사회학·조직행동 (1개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#116-institutional-imperative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #116 기관의 명령 (Institutional Imperative)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-h-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-H. 철학·역사 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-H. 철학·역사 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#124-via-negativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #124 부정의 길 (Via Negativa)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125-historical-analogies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #125 역사적 유추 (Historical Analogies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 출처 및 참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 출처 및 참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-primary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1차 문헌 (Primary Sources) ★★★★★
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-secondary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2차 문헌 — 검증된 분석 소스 (Secondary Sources) ★★★★☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tertiary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3차 문헌 — 투자 블로그 및 큐레이션 (Tertiary Sources) ★★★☆☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub 소스 ★★☆☆☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 전체 모델 인덱스 (가나다순)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="checklist.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    마스터 체크리스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    세션별 학습
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    세션별 학습
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    학습 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 인센티브의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 감정의 편향
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. 확신의 함정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. 자기과신과 손실
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. 사회적 영향력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. 환경과 습관
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. 호기심에서 롤라팔루자까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. 수학의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_09.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. 통계적 사고
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. 확률과 안전마진
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_11.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. 임계점과 폭발적 성장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_12.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. 시스템의 법칙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_13.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. 촉매에서 진화까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_14.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. 생태계의 경쟁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_15.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. 경제학 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_16.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. 네트워크와 해자
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_17.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. 경제학 심화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_18.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. 투자의 본질
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_19.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. 역발상과 사고도구
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_20.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. 체크리스트와 분석
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_21.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. 편향과 반증
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/session_22.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. 격자틀과 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sessions/system_prompt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시스템 프롬프트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        소스 신뢰도 등급 안내
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1-47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 TIER 1 — 멍거 직접 명명·언급 (47개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 TIER 1 — 멍거 직접 명명·언급 (47개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I. 심리학 — 인간 오판의 25가지 심리 경향
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. 심리학 — 인간 오판의 25가지 심리 경향">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reward-punishment-superresponse-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #1 보상·처벌 과잉반응 경향 (Reward &amp; Punishment Superresponse Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-likingloving-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #2 좋아함·사랑 경향 (Liking/Loving Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-dislikinghating-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #3 싫어함·증오 경향 (Disliking/Hating Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-doubt-avoidance-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #4 의심 회피 경향 (Doubt-Avoidance Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-inconsistency-avoidance-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #5 불일치 회피 경향 (Inconsistency-Avoidance Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-curiosity-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #6 호기심 경향 (Curiosity Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-kantian-fairness-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #7 칸트식 공정성 경향 (Kantian Fairness Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-envyjealousy-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #8 시기·질투 경향 (Envy/Jealousy Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-reciprocation-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #9 호혜성 경향 (Reciprocation Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-influence-from-mere-association-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #10 단순 연상 영향 경향 (Influence-from-Mere-Association Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-pain-avoiding-psychological-denial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #11 고통 회피 심리적 부정 (Pain-Avoiding Psychological Denial)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-excessive-self-regard-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #12 과도한 자기 평가 경향 (Excessive Self-Regard Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-deprival-superreaction-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #13 박탈 과잉반응 경향 (Deprival-Superreaction Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-social-proof-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #14 사회적 증거 경향 (Social Proof Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-contrast-misreaction-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #15 대비 오반응 경향 (Contrast-Misreaction Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-stress-influence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #16 스트레스 영향 경향 (Stress-Influence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-availability-misweighing-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #17 가용성 오가중 경향 (Availability-Misweighing Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-use-it-or-lose-it-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #18 사용하지 않으면 잃는 경향 (Use-It-or-Lose-It Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-drug-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #19 약물 오영향 경향 (Drug-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-senescence-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #20 노화 오영향 경향 (Senescence-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-authority-misinfluence-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #21 권위 오영향 경향 (Authority-Misinfluence Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-twaddle-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #22 잡담 경향 (Twaddle Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-reason-respecting-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #23 이유 존중 경향 (Reason-Respecting Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lollapalooza-tendency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #24 롤라팔루자 경향 (Lollapalooza Tendency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-pavlovian-associationconditioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #25 파블로프식 연상 조건화 (Pavlovian Association/Conditioning)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-tier-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II. 수학·통계 — Tier 1 (3개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. 수학·통계 — Tier 1 (3개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#30-compound-interest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #30 복리 (Compound Interest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-probability-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #31 확률론 (Probability Theory)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-permutations-combinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #32 순열과 조합 (Permutations &amp; Combinations)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-tier-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III. 물리학 — Tier 1 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="III. 물리학 — Tier 1 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45-critical-mass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #45 임계 질량 (Critical Mass)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-breakpoints-tipping-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #46 임계점·전환점 (Breakpoints / Tipping Points)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-tier-1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IV. 화학 — Tier 1 (1개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. 화학 — Tier 1 (1개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-autocatalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #61 자기 촉매 작용 (Autocatalysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-tier-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        V. 생물학 — Tier 1 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V. 생물학 — Tier 1 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#64-natural-selection-darwinian-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #64 자연선택 (Natural Selection / Darwinian Evolution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-modern-darwinian-synthesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #65 현대 다윈 종합 이론 (Modern Darwinian Synthesis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-tier-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VI. 경제학 — Tier 1 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VI. 경제학 — Tier 1 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-supply-and-demand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #71 수요와 공급 (Supply and Demand)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-opportunity-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #72 기회비용 (Opportunity Cost)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-scale-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #74 규모의 경제 (Scale Economies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-network-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #75 네트워크 효과 (Network Effects)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-competitive-advantage-economic-moat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #77 경쟁우위 / 해자 (Competitive Advantage / Economic Moat)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-incentive-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #82 인센티브 구조 (Incentive Structures)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-mr-market" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #86 미스터 마켓 (Mr. Market)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vii-tier-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VII. 사고 도구 — Tier 1 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VII. 사고 도구 — Tier 1 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#93-inversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #93 역발상 (Inversion)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-circle-of-competence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #96 능력 범위 (Circle of Competence)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-checklist-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #97 체크리스트 사고 (Checklist Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#98-two-track-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #98 이중 경로 분석 (Two-Track Analysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-multidisciplinary-thinking-latticework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #102 다학문적 사고 / 격자틀 (Multidisciplinary Thinking / Latticework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-decision-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #103 의사결정 나무 (Decision Trees)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#108-man-with-a-hammer-syndrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #108 망치 든 사람 증후군 (Man-with-a-Hammer Syndrome)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 TIER 2 — 멍거 사고 체계 포함, 간접 언급 (43개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟡 TIER 2 — 멍거 사고 체계 포함, 간접 언급 (43개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ii-a-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-A. 수학·통계 (7개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-A. 수학·통계 (7개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-statistics-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #33 통계 및 분포 (Statistics &amp; Distributions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-regression-to-the-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #34 평균으로의 회귀 (Regression to the Mean)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-base-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #35 기본율 / 기저율 (Base Rates)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-expected-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #36 기대값 (Expected Value)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-power-laws-pareto-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #37 멱함수 법칙 / 파레토 법칙 (Power Laws / Pareto Principle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-bayesian-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #38 베이즈 업데이트 (Bayesian Updating)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-margin-of-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #39 안전 마진 (Margin of Safety)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-b-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-B. 물리학·공학 (5개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-B. 물리학·공학 (5개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#47-redundancy-backup-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #47 이중 안전장치 (Redundancy / Backup Systems)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-leverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #48 지렛대 원리 (Leverage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-inertia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #49 관성 (Inertia)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#50-entropy-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #50 엔트로피 (Entropy / Thermodynamics)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #51 균형 (Equilibrium)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-c-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-C. 화학 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-C. 화학 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#62-activation-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #62 활성화 에너지 (Activation Energy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #63 촉매 작용 (Catalysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-d-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-D. 생물학·진화 (5개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-D. 생물학·진화 (5개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#66-ecological-niches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #66 생태적 지위 (Ecological Niches)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-competitive-exclusion-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #67 경쟁적 배제 원리 (Competitive Exclusion Principle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68-red-queen-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #68 붉은 여왕 효과 (Red Queen Effect)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#69-symbiosis-ecosystem-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #69 공생 / 생태계 사고 (Symbiosis / Ecosystem Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #70 적응 (Adaptation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-e-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-E. 경제학·미시경제 (12개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-E. 경제학·미시경제 (12개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#73-comparative-advantage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #73 비교우위 (Comparative Advantage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-creative-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #76 창조적 파괴 (Creative Destruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#78-switching-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #78 전환 비용 (Switching Costs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#79-price-elasticity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #79 가격 탄력성 (Price Elasticity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#80-marginal-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #80 한계 효용 (Marginal Utility)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81-game-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #81 게임 이론 (Game Theory)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-principal-agent-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #83 주인-대리인 문제 (Principal-Agent Problem)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-adverse-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #84 역선택 (Adverse Selection)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-moral-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #85 도덕적 해이 (Moral Hazard)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-intrinsic-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #87 내재가치 (Intrinsic Value)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#91-greshams-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #91 그레셤의 법칙 (Gresham's Law)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-accounting-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #92 회계의 기초 (Accounting Fundamentals)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-f-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-F. 사고 도구·일반 논리 (9개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-F. 사고 도구·일반 논리 (9개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#94-1-first-principles-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #94 제1원칙 사고 (First Principles Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-2-second-order-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #95 2차적 사고 (Second-Order Thinking)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-occams-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #99 오컴의 면도날 (Occam's Razor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-hanlons-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #100 핸런의 면도날 (Hanlon's Razor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#101-falsifiability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #101 반증 가능성 / 반증 증거 탐색 (Falsifiability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-survivorship-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #104 생존자 편향 (Survivorship Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-anchoring-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #105 닻 내림 편향 (Anchoring Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106-confirmation-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #106 확증 편향 (Confirmation Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-hindsight-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #107 사후 확신 편향 (Hindsight Bias)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-g-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-G. 사회학·조직행동 (1개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-G. 사회학·조직행동 (1개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#116-institutional-imperative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #116 기관의 명령 (Institutional Imperative)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-h-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II-H. 철학·역사 (2개)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II-H. 철학·역사 (2개)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#124-via-negativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #124 부정의 길 (Via Negativa)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125-historical-analogies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #125 역사적 유추 (Historical Analogies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 출처 및 참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 출처 및 참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-primary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1차 문헌 (Primary Sources) ★★★★★
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-secondary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2차 문헌 — 검증된 분석 소스 (Secondary Sources) ★★★★☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tertiary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3차 문헌 — 투자 블로그 및 큐레이션 (Tertiary Sources) ★★★☆☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub 소스 ★★☆☆☆
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 전체 모델 인덱스 (가나다순)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tier-1-tier-2-90">찰리 멍거 핵심 멘탈 모델 — Tier 1 + Tier 2 (90개)<a class="headerlink" href="#tier-1-tier-2-90" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>신뢰도 검증 후 선별</strong>: 멍거가 직접 언급·명명한 모델(Tier 1: 47개) +
+멍거의 사고 체계에 포함된 간접 언급 모델(Tier 2: 43개)
+<strong>중복 제거</strong>: #88 플로트·#89 오너이익·#90 ROIC(재무지표, 멘탈 모델 아님) 제외
+<strong>총 90개</strong> | 출처 포함 | 상세 설명 수록</p>
+</blockquote>
+<hr />
+<h2 id="_1">소스 신뢰도 등급 안내<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>등급</th>
+<th>소스</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★★★★★</td>
+<td>Poor Charlie's Almanack (PCA)</td>
+<td>멍거 강연 11개 원문. 유일한 1차 문헌</td>
+</tr>
+<tr>
+<td>★★★★☆</td>
+<td>Farnam Street (fs.blog)</td>
+<td>원문 기반 분석. 멍거 본인 호평</td>
+</tr>
+<tr>
+<td>★★★★☆</td>
+<td>allencheng.com</td>
+<td>PCA Talk 7 직접 분석</td>
+</tr>
+<tr>
+<td>★★★☆☆</td>
+<td>sourcesofinsight.com</td>
+<td>2차 편집 포함. 신뢰 가능</td>
+</tr>
+<tr>
+<td>★★★☆☆</td>
+<td>Safal Niveshak</td>
+<td>투자 블로그. 원문 참조</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="tier-1-47">🟢 TIER 1 — 멍거 직접 명명·언급 (47개)<a class="headerlink" href="#tier-1-47" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="i-25">I. 심리학 — 인간 오판의 25가지 심리 경향<a class="headerlink" href="#i-25" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>출처: Poor Charlie's Almanack, <strong>Talk 7: "The Psychology of Human Misjudgment"</strong> ★★★★★
+멍거가 직접 번호를 부여하고 명명한 유일한 공식 목록</p>
+</blockquote>
+<hr />
+<h4 id="1-reward-punishment-superresponse-tendency">#1 보상·처벌 과잉반응 경향 (Reward &amp; Punishment Superresponse Tendency)<a class="headerlink" href="#1-reward-punishment-superresponse-tendency" title="Permanent link">&para;</a></h4>
+<p>인간은 인센티브와 벌칙에 지나치게 강하게, 때로는 비합리적으로 반응하는 경향이 있다. 멍거는 "show me the incentive and I'll show you the outcome"이라는 말로 이 경향의 강력함을 압축했다. 보상 구조가 잘못 설계되면 아무리 도덕적인 사람도 나쁜 행동을 하게 된다—이것은 악의가 아니라 시스템의 문제다. 투자에서는 펀드 매니저의 수수료 구조가 고객 이익이 아닌 자신의 이익을 극대화하도록 설계될 때 이 경향이 작동한다. 기업을 분석할 때 경영진 보상 구조를 먼저 확인하는 이유가 여기에 있다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="2-likingloving-tendency">#2 좋아함·사랑 경향 (Liking/Loving Tendency)<a class="headerlink" href="#2-likingloving-tendency" title="Permanent link">&para;</a></h4>
+<p>사람은 자신이 좋아하거나 사랑하는 대상의 단점을 무시하고, 그 대상의 소망에 맹목적으로 따르며, 그 대상과 연관된 모든 것을 호의적으로 왜곡해서 보는 경향이 있다. 이 편향은 특히 채용·투자·파트너십 결정에서 치명적으로 작용한다. 뛰어난 경영자나 훌륭한 브랜드에 대한 과도한 애착이 가격을 과대평가하게 만든다. 멍거는 "사랑은 눈을 멀게 한다"는 격언이 투자에서 그대로 적용된다고 경고했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="3-dislikinghating-tendency">#3 싫어함·증오 경향 (Disliking/Hating Tendency)<a class="headerlink" href="#3-dislikinghating-tendency" title="Permanent link">&para;</a></h4>
+<p>좋아함 경향의 반대로, 싫어하는 대상과 연관된 모든 것을 왜곡해서 보고 그 대상의 장점조차 무시하는 경향이다. 이 경향은 라이벌 기업이나 경쟁자를 분석할 때 객관성을 해친다. 자신이 실패한 투자 아이디어나 싫어하는 CEO가 이끄는 기업은 제대로 분석하기 어렵다. 멍거는 이 경향을 극복하기 위해 "반대 입장을 스스로 가장 강하게 논증해보는" 방법을 권했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="4-doubt-avoidance-tendency">#4 의심 회피 경향 (Doubt-Avoidance Tendency)<a class="headerlink" href="#4-doubt-avoidance-tendency" title="Permanent link">&para;</a></h4>
+<p>인간의 뇌는 불확실성과 의심을 불편하게 여겨 이를 빨리 제거하려고 성급하게 결론을 내리는 경향이 있다. 특히 위협적이거나 감정적인 상황에서 이 경향이 강화된다. 투자에서는 충분한 검토 없이 "이 종목은 분명히 오를 것"이라고 빠르게 확신하게 만든다. 멍거는 좋은 투자자가 되려면 불확실성을 편안하게 견디는 능력, 즉 "부정적 능력(negative capability)"이 필요하다고 강조했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="5-inconsistency-avoidance-tendency">#5 불일치 회피 경향 (Inconsistency-Avoidance Tendency)<a class="headerlink" href="#5-inconsistency-avoidance-tendency" title="Permanent link">&para;</a></h4>
+<p>한번 형성된 신념, 습관, 결론을 바꾸지 않으려는 강한 경향이다. 뇌는 인지적 에너지를 절약하기 위해 기존 프로그래밍을 유지하려 한다. 이것이 "매몰 비용 오류"와 "포지션 편향"의 근원이다. 잘못된 투자 결정이 분명해진 후에도 기존 판단을 유지하려 손실을 키우는 행동이 이 경향의 전형적 사례다. 멍거는 "나는 내 의견을 바꿀 수 없는 사람과는 사업하지 않겠다"고 말했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="6-curiosity-tendency">#6 호기심 경향 (Curiosity Tendency)<a class="headerlink" href="#6-curiosity-tendency" title="Permanent link">&para;</a></h4>
+<p>다른 24개 경향이 모두 오판의 원인이라면, 이 경향은 멍거가 계발을 권장한 유일한 긍정적 경향이다. 호기심이 강한 사람은 독서와 관찰을 통해 지식을 평생 축적하고 이를 다양한 문제 해결에 활용한다. 멍거 자신이 99세까지 하루 수백 페이지를 읽은 독서가였으며, 그 원동력이 바로 왕성한 호기심이었다. 투자에서는 산업 전반, 역사, 심리학, 자연과학에 대한 넓은 호기심이 남들이 보지 못하는 투자 기회를 발견하게 해준다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="7-kantian-fairness-tendency">#7 칸트식 공정성 경향 (Kantian Fairness Tendency)<a class="headerlink" href="#7-kantian-fairness-tendency" title="Permanent link">&para;</a></h4>
+<p>인간은 상호적 공정성을 기대하며, 자신이 불공정하게 대우받았다고 느끼면 경제적 손해를 감수하면서도 응징하려는 경향이 있다. 행동경제학의 "최후통첩 게임" 실험에서 30% 이하의 분배를 거부하는 현상이 이를 입증한다. 비즈니스 관계에서 단기 이익을 위해 파트너를 불공정하게 대우하면 장기적으로 관계가 파괴된다. 멍거는 버크셔의 협력사·공급업체와의 관계에서 항상 "양측 모두 좋은 거래"를 원칙으로 삼았다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="8-envyjealousy-tendency">#8 시기·질투 경향 (Envy/Jealousy Tendency)<a class="headerlink" href="#8-envyjealousy-tendency" title="Permanent link">&para;</a></h4>
+<p>타인의 성공이나 소유물에 대해 불합리한 불쾌감과 질투심을 느끼는 경향이다. 멍거는 "질투는 정말 어리석은 죄악이다. 왜냐하면 그것으로부터 어떤 즐거움도 얻을 수 없는 유일한 죄악이기 때문이다"라고 말했다. 투자에서는 다른 사람의 수익률을 부러워하며 자신의 전략을 이유 없이 포기하거나 과도한 리스크를 감수하게 만든다. 멍거는 타인의 성공에서 배우되 부러워하지 않는 태도를 강조했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="9-reciprocation-tendency">#9 호혜성 경향 (Reciprocation Tendency)<a class="headerlink" href="#9-reciprocation-tendency" title="Permanent link">&para;</a></h4>
+<p>받은 호의는 호의로, 받은 해악은 해악으로 되갚으려는 강력한 사회적 본능이다. 이 경향은 협력 사회를 가능하게 한 진화적 산물이지만 동시에 조작의 도구로 악용된다. 무료 샘플, 선물, 작은 양보는 상대방에게 보답해야 한다는 심리적 의무감을 만들어 구매나 양보를 이끌어낸다. 영업·협상·로비에서 광범위하게 활용되므로, 작은 호의를 받은 후 불필요한 결정을 내리지 않도록 경계해야 한다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="10-influence-from-mere-association-tendency">#10 단순 연상 영향 경향 (Influence-from-Mere-Association Tendency)<a class="headerlink" href="#10-influence-from-mere-association-tendency" title="Permanent link">&para;</a></h4>
+<p>특정 자극과 단순히 연관되는 것만으로도 판단이 긍정적 혹은 부정적으로 영향받는 경향이다. 나쁜 소식을 전달한 전령을 처형한 고대의 관습, 아름다운 모델 옆에 차를 배치하는 광고, 유명 인사가 제품을 사용하는 장면이 모두 이 원리를 활용한다. 투자에서는 좋아하는 CEO가 운영하는 회사라는 이유만으로 기업 가치를 과대평가하거나, 나쁜 과거 실적이 있는 산업의 종목을 이유 없이 기피하는 현상으로 나타난다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="11-pain-avoiding-psychological-denial">#11 고통 회피 심리적 부정 (Pain-Avoiding Psychological Denial)<a class="headerlink" href="#11-pain-avoiding-psychological-denial" title="Permanent link">&para;</a></h4>
+<p>직면하기 너무 고통스러운 현실을 심리적으로 부정하거나 왜곡하여 인식하지 않으려는 경향이다. 암 진단을 받은 환자가 이를 부정하거나, 파산 직전의 기업 오너가 현실을 인정하지 않는 것이 전형적 사례다. 투자에서는 명백히 잘못된 투자에 대해 "곧 반등할 것"이라는 자기 위안으로 손절의 적기를 놓치게 만든다. 고통스러운 사실을 직시하는 용기가 좋은 의사결정의 전제조건이다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="12-excessive-self-regard-tendency">#12 과도한 자기 평가 경향 (Excessive Self-Regard Tendency)<a class="headerlink" href="#12-excessive-self-regard-tendency" title="Permanent link">&para;</a></h4>
+<p>자신의 능력, 판단력, 외모, 미래 전망 등을 객관적 수준 이상으로 과대평가하는 경향이다. 통계적으로 운전자의 90%가 "자신은 평균 이상의 운전 실력"이라고 믿는 현상이 이를 잘 보여준다. 투자에서는 자신의 분석 능력에 대한 과잉 확신이 과도한 포지션 규모, 불충분한 안전 마진, 반증 증거 무시로 이어진다. 멍거는 "자기 자신이 틀렸을 때를 인정할 수 있는 능력"을 가장 중요한 지적 덕목으로 꼽았다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="13-deprival-superreaction-tendency">#13 박탈 과잉반응 경향 (Deprival-Superreaction Tendency)<a class="headerlink" href="#13-deprival-superreaction-tendency" title="Permanent link">&para;</a></h4>
+<p>이미 가진 것을 잃는 것에 대한 고통이, 동일한 크기의 이득에서 얻는 기쁨보다 약 2배 강하게 느껴지는 경향이다. 행동경제학에서는 이를 "손실 회피(Loss Aversion)"라고 부른다. 거의 박탈 직전 상태, 즉 마감 임박이나 "마지막 기회"라는 표현이 이 경향을 자극해 충동 구매를 유발한다. 투자에서는 손실 종목을 팔지 못하고 끌어안거나, 수익이 난 종목을 너무 일찍 팔아버리는 비대칭적 행동으로 나타난다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="14-social-proof-tendency">#14 사회적 증거 경향 (Social Proof Tendency)<a class="headerlink" href="#14-social-proof-tendency" title="Permanent link">&para;</a></h4>
+<p>불확실한 상황에서 다른 사람들의 행동을 옳은 것으로 판단하고 따르는 경향이다. 진화적으로 이 경향은 생존에 유리했지만 현대에는 집단적 비이성의 원인이 된다. "모두가 사고 있다"는 사실이 자산 가격 버블을 만들고, "모두가 팔고 있다"는 공황이 투자의 최대 기회를 만든다. 멍거는 "군중이 가는 방향의 반대를 먼저 살펴보라"고 조언했다. ※ 편승 효과(Bandwagon Effect)와 본질적으로 동일한 개념이다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="15-contrast-misreaction-tendency">#15 대비 오반응 경향 (Contrast-Misreaction Tendency)<a class="headerlink" href="#15-contrast-misreaction-tendency" title="Permanent link">&para;</a></h4>
+<p>사물의 절대적 가치가 아닌 비교 대상과의 상대적 차이로 판단하는 경향이다. 작은 차이도 두 극단 사이에 놓이면 크게 인지되고, 큰 차이도 비슷한 것들 사이에 놓이면 무시된다. 부동산 중개인이 비싼 집을 먼저 보여준 뒤 합리적 가격의 집을 보여주는 전략, 옷가게에서 비싼 재킷을 먼저 판 뒤 양말을 권하는 전략이 모두 이 원리를 이용한다. 투자에서는 52주 고점 대비 하락폭만 보고 "저렴해 보인다"고 착각하게 만든다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="16-stress-influence-tendency">#16 스트레스 영향 경향 (Stress-Influence Tendency)<a class="headerlink" href="#16-stress-influence-tendency" title="Permanent link">&para;</a></h4>
+<p>극심한 스트레스 상황에서 파블로프식 조건 반응이 강화되고 판단력이 급격히 저하되는 경향이다. 군사 훈련에서 극한 스트레스 상황을 반복 훈련하는 이유가 여기에 있다—스트레스 하에서도 올바른 반응이 자동화되도록 하기 위해서다. 시장 폭락 시 패닉 상태에서 매도하는 행동이 이 경향의 전형적 사례다. 멍거는 투자 결정을 내리기 전 감정 상태를 확인하는 루틴의 중요성을 강조했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="17-availability-misweighing-tendency">#17 가용성 오가중 경향 (Availability-Misweighing Tendency)<a class="headerlink" href="#17-availability-misweighing-tendency" title="Permanent link">&para;</a></h4>
+<p>쉽게 머릿속에 떠오르는 생생한 정보에 과도한 가중치를 부여하는 경향이다. 비행기 사고 뉴스를 본 직후에는 비행기 사고 확률을 실제보다 훨씬 높게 추정한다. 투자에서는 최근 상승했거나 언론에 자주 등장한 종목을 더 매력적으로 느끼게 만든다. 이 경향을 극복하려면 통계적 기저율과 역사적 데이터에 더 많은 비중을 두는 의식적 노력이 필요하다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="18-use-it-or-lose-it-tendency">#18 사용하지 않으면 잃는 경향 (Use-It-or-Lose-It Tendency)<a class="headerlink" href="#18-use-it-or-lose-it-tendency" title="Permanent link">&para;</a></h4>
+<p>기술, 지식, 절차는 꾸준히 사용하고 연습하지 않으면 점차 쇠퇴하는 경향이다. 뇌의 시냅스 연결은 사용하지 않으면 약화된다는 신경과학적 사실이 이를 뒷받침한다. 멍거가 체크리스트를 강력히 권장한 이유 중 하나가 이 경향 때문이다—체크리스트는 중요한 고려사항이 비활성화되어 잊히는 것을 방지한다. 투자에서는 분석 루틴을 지속적으로 유지하고, 사용하지 않는 지식은 주기적으로 복습하는 습관이 필요하다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="19-drug-misinfluence-tendency">#19 약물 오영향 경향 (Drug-Misinfluence Tendency)<a class="headerlink" href="#19-drug-misinfluence-tendency" title="Permanent link">&para;</a></h4>
+<p>알코올, 마약 등 화학물질이 뇌의 판단력과 의사결정 능력을 심각하게 왜곡하는 경향이다. 이 경향이 목록에 포함된 이유는 투자 결정이나 중요한 협상을 술자리에서 하지 말아야 한다는 실용적 조언을 위해서다. 더 넓게 해석하면, 흥분·공포·환희 등 강한 감정도 일종의 내생적 화학 상태로서 판단력을 왜곡한다는 의미를 포함한다. 멍거는 중요한 결정은 항상 냉정하고 안정적인 상태에서 내려야 한다고 강조했다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="20-senescence-misinfluence-tendency">#20 노화 오영향 경향 (Senescence-Misinfluence Tendency)<a class="headerlink" href="#20-senescence-misinfluence-tendency" title="Permanent link">&para;</a></h4>
+<p>나이가 들면서 인지 능력, 특히 새로운 정보를 처리하고 유연하게 사고하는 능력이 점진적으로 저하되는 경향이다. 멍거는 이 경향을 인정하면서도 "젊을 때 올바른 사고 습관과 지식을 충분히 구축해두면 노년에도 좋은 판단을 유지할 수 있다"고 말했다. 그 자신이 90대에도 탁월한 판단력을 유지한 것은 평생에 걸친 독서와 사고 훈련 덕분이었다. 이 경향은 개인보다 조직에서 더욱 두드러진다—오래된 기업이 변화에 적응하지 못하는 이유다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="21-authority-misinfluence-tendency">#21 권위 오영향 경향 (Authority-Misinfluence Tendency)<a class="headerlink" href="#21-authority-misinfluence-tendency" title="Permanent link">&para;</a></h4>
+<p>권위 있어 보이는 직함, 복장, 태도만으로도 사람들이 비판적 사고 없이 복종하는 경향이다. 밀그램 실험에서 권위자의 지시에 따라 전기 충격을 가하는 피험자들의 행동이 이를 극단적으로 보여준다. 투자에서는 저명한 애널리스트나 유명 투자자의 의견을 독립적으로 검증하지 않고 따르는 행동으로 나타난다. 멍거는 "아무리 존경받는 전문가의 의견도 직접 검토해야 한다"고 강조했으며, 이것이 그가 독립적 사고를 강조한 이유 중 하나다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="22-twaddle-tendency">#22 잡담 경향 (Twaddle Tendency)<a class="headerlink" href="#22-twaddle-tendency" title="Permanent link">&para;</a></h4>
+<p>중요하지 않은 일에 시간을 낭비하고, 핵심을 피해 공허한 말로 시간을 채우는 경향이다. 멍거는 이를 단순히 수다가 아니라 생산적 사고를 방해하는 진지한 오류로 다뤘다. 투자 세계에서는 가격 움직임, 단기 예측, 거시경제 논평 등 행동으로 이어지지 않는 잡음에 집중하는 현상이 이에 해당한다. "모든 것에 의견을 가질 필요는 없다"는 멍거의 조언은 이 경향을 경계하라는 실용적 권고다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="23-reason-respecting-tendency">#23 이유 존중 경향 (Reason-Respecting Tendency)<a class="headerlink" href="#23-reason-respecting-tendency" title="Permanent link">&para;</a></h4>
+<p>이유가 제시되면 그 이유의 논리적 타당성과 무관하게 요청에 훨씬 더 잘 따르는 경향이다. 로버트 치알디니의 복사기 실험에서 "왜냐하면 복사를 해야 하기 때문에"라는 무의미한 이유만으로도 새치기 허용률이 크게 높아진 것이 이를 보여준다. 프레젠테이션, 협상, 마케팅에서 이유를 제시하는 것만으로도 설득력이 크게 높아진다. 의사결정 시 제시된 이유의 실질적 타당성을 별도로 검토하는 습관이 이 경향을 방어한다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="24-lollapalooza-tendency">#24 롤라팔루자 경향 (Lollapalooza Tendency)<a class="headerlink" href="#24-lollapalooza-tendency" title="Permanent link">&para;</a></h4>
+<p>여러 심리적 편향이 동시에 같은 방향으로 작용할 때 단순 합산 이상의 극단적이고 폭발적인 결과가 나타나는 경향이다. 멍거가 직접 조어한 개념으로, 이것이 25가지 경향 중 그가 가장 중요하게 여긴 메커니즘이다. 카지노는 화려한 빛과 소리(연상 경향), 무료 음료(호혜성), 주변의 당첨자(사회적 증거), 거의 이길 뻔한 경험(박탈 경향)이 동시에 작용하도록 설계된 롤라팔루자의 전형이다. 시장 버블과 금융 위기도 이 경향의 산물이다—탐욕, 사회적 증거, 인센티브 편향이 동시에 같은 방향으로 작용할 때 발생한다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h4 id="25-pavlovian-associationconditioning">#25 파블로프식 연상 조건화 (Pavlovian Association/Conditioning)<a class="headerlink" href="#25-pavlovian-associationconditioning" title="Permanent link">&para;</a></h4>
+<p>특정 자극과 특정 반응이 반복적으로 연결되어 조건 반사적 행동이 고착되는 경향이다. 파블로프의 개 실험에서 종소리만 들어도 침을 흘리게 된 것처럼, 반복된 연상은 자동적 반응을 만든다. 브랜드 마케팅의 핵심 원리가 여기 있다—코카콜라의 로고를 보는 것만으로 청량감과 행복을 연상하도록 수십 년간 조건화된 것이다. 투자에서는 특정 뉴스 유형이나 시장 패턴에 자동 반응하는 매매 습관을 의식적으로 점검해야 한다.</p>
+<p><em>출처: PCA Talk 7 ★★★★★</em></p>
+<hr />
+<h3 id="ii-tier-1-3">II. 수학·통계 — Tier 1 (3개)<a class="headerlink" href="#ii-tier-1-3" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="30-compound-interest">#30 복리 (Compound Interest)<a class="headerlink" href="#30-compound-interest" title="Permanent link">&para;</a></h4>
+<p>원금에 이자가 붙고, 그 이자에 다시 이자가 붙는 방식으로 시간이 지날수록 기하급수적으로 성장하는 원리다. 멍거는 복리를 "세계 8대 불가사의"라고 불렀으며, 아인슈타인도 같은 표현을 사용했다고 전해진다. 10만 원을 연 10%로 20년 운용하면 67만 원이 되지만, 30년이면 175만 원으로 불어난다—시간이 길어질수록 가속도가 붙는다. 이 원리는 자본에만 적용되는 것이 아니다. 지식, 평판, 인간관계, 기술도 복리로 성장하며, 반대로 나쁜 습관도 복리로 악화된다. 멍거가 "좋은 기업을 적정 가격에 오래 보유하라"고 강조한 것은 복리의 힘을 극대화하기 위해서다.</p>
+<p><em>출처: PCA Talk 2 "Elementary Worldly Wisdom" ★★★★★</em></p>
+<hr />
+<h4 id="31-probability-theory">#31 확률론 (Probability Theory)<a class="headerlink" href="#31-probability-theory" title="Permanent link">&para;</a></h4>
+<p>불확실한 미래에 대해 수치화된 가능성을 부여하고, 이를 의사결정의 기준으로 삼는 사고 체계다. 멍거는 Talk 2에서 "수학에서 가장 중요한 것은 확률 계산 능력"이라고 명시했다. 단순히 "될 것 같다/안 될 것 같다"는 이분법이 아니라 "70% 확률로 될 것이고, 그 결과의 가치는 X이므로 기대값은 Y"라는 방식으로 사고해야 한다. 멍거는 이것이 파리 경마장에서 배운 것이라고 말했다—경마에서 말의 실력뿐 아니라 배당률(가격)을 함께 고려하듯, 투자에서도 좋은 기업뿐 아니라 가격이 반영하는 확률을 따져야 한다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="32-permutations-combinations">#32 순열과 조합 (Permutations &amp; Combinations)<a class="headerlink" href="#32-permutations-combinations" title="Permanent link">&para;</a></h4>
+<p>가능한 결과의 배열과 조합을 체계적으로 계산하는 방법으로, 복잡한 상황의 모든 가능한 경우의 수를 빠짐없이 검토하게 해준다. 멍거는 이것이 "많은 사람들이 갖추지 못한 사고 능력"이라고 강조했다. 예컨대 5가지 조건이 각각 90% 확률로 성립해야 하는 계획은 전체 성공 확률이 59%(0.9⁵)에 불과하다—각 조건만 보면 낙관적이지만 전체를 보면 실패 가능성이 더 높다. 투자 논문이나 사업 계획에서 "모든 조건이 동시에 성립해야 하는 구조"를 경계하는 것이 이 모델의 실전 적용이다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h3 id="iii-tier-1-2">III. 물리학 — Tier 1 (2개)<a class="headerlink" href="#iii-tier-1-2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="45-critical-mass">#45 임계 질량 (Critical Mass)<a class="headerlink" href="#45-critical-mass" title="Permanent link">&para;</a></h4>
+<p>핵분열 반응에서 특정 질량(임계 질량)에 도달하는 순간 연쇄 반응이 자기 지속적으로 폭발하듯, 어떤 시스템이 임계 규모에 도달하면 외부 에너지 없이도 스스로 성장하는 현상이다. 멍거는 Talk 2에서 이 물리학 개념을 비즈니스에 직접 적용했다. 신문 구독자가 임계 규모를 넘으면 광고주가 몰리고, 광고 수익으로 콘텐츠가 개선되어 구독자가 더 모이는 선순환이 시작된다. 소셜 네트워크, 결제 플랫폼, 마켓플레이스가 임계 규모에 도달한 후 폭발적으로 성장하는 이유가 여기에 있으며, 이것이 버크셔가 강한 해자를 가진 기업을 선호하는 이유다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="46-breakpoints-tipping-points">#46 임계점·전환점 (Breakpoints / Tipping Points)<a class="headerlink" href="#46-breakpoints-tipping-points" title="Permanent link">&para;</a></h4>
+<p>점진적 변화가 축적되다가 특정 임계점을 넘는 순간 시스템이 급격하고 비선형적으로 전환되는 현상이다. 물이 99°C에서 100°C로 단 1도 오를 때 기체로 상태가 바뀌듯, 변화는 종종 선형적이지 않다. 이 모델은 비선형성(nonlinearity) 개념을 포괄한다. 산업 구조의 변화, 기업의 흥망, 문화적 유행의 확산은 모두 이 패턴을 따른다. 투자에서는 "아직 아무도 모르지만 임박한 전환점"을 먼저 인식하는 것이 초과 수익의 원천이다. 반대로 내가 투자한 기업이 하향 임계점에 다가가고 있는지를 경계해야 한다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h3 id="iv-tier-1-1">IV. 화학 — Tier 1 (1개)<a class="headerlink" href="#iv-tier-1-1" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="61-autocatalysis">#61 자기 촉매 작용 (Autocatalysis)<a class="headerlink" href="#61-autocatalysis" title="Permanent link">&para;</a></h4>
+<p>화학 반응의 생성물이 그 반응 자체를 다시 촉진하는 자기 강화적 메커니즘이다. 한번 시작되면 외부 에너지 없이 스스로 가속된다. 멍거는 Talk 2에서 "auto-catalytic processes"를 직접 언급하며 비즈니스 성장 패턴에 적용했다. 예를 들어, 좋은 제품이 구전 추천을 낳고, 그 추천이 더 많은 고객을 불러 규모가 커지면 단가가 낮아져 더 좋은 제품을 만들 수 있게 되는 선순환이 자기 촉매의 전형이다. 버크셔 해서웨이 자체도 자기 촉매적 구조다—수익이 재투자되어 더 많은 수익을 낳는다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h3 id="v-tier-1-2">V. 생물학 — Tier 1 (2개)<a class="headerlink" href="#v-tier-1-2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="64-natural-selection-darwinian-evolution">#64 자연선택 (Natural Selection / Darwinian Evolution)<a class="headerlink" href="#64-natural-selection-darwinian-evolution" title="Permanent link">&para;</a></h4>
+<p>환경에 가장 잘 적응한 개체가 생존하고 번식하여 그 형질이 다음 세대로 전달되는 진화의 핵심 원리다. 멍거는 다윈을 가장 존경하는 사상가 중 한 명으로 꼽았으며, Talk 2에서 다윈 진화론을 핵심 멘탈 모델로 직접 언급했다. 비즈니스 환경에서도 동일한 원리가 작동한다—환경 변화에 적응하지 못한 기업은 시장에서 도태된다. 멍거는 또한 다윈이 자신의 이론을 반박하는 증거를 특히 열심히 수집했다는 사실을 강조하며, 이를 확증 편향을 극복하는 모델로 삼았다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="65-modern-darwinian-synthesis">#65 현대 다윈 종합 이론 (Modern Darwinian Synthesis)<a class="headerlink" href="#65-modern-darwinian-synthesis" title="Permanent link">&para;</a></h4>
+<p>다윈의 자연선택론과 멘델의 유전학을 통합한 현대 진화 생물학의 이론 체계다. 변이(Variation)·선택(Selection)·유전(Heredity)의 세 축이 진화를 설명한다. 멍거는 이 통합 이론이 생물학뿐 아니라 사회·경제 시스템의 변화를 이해하는 데도 강력한 틀을 제공한다고 강조했다. 기업 생태계에서 변이(혁신)가 발생하고, 시장이 선택하며, 성공한 모델이 복제·전파(유전)된다. 단일 학문의 이론이 아닌 여러 학문을 관통하는 원리를 찾는 멍거의 다학문적 접근의 전형적 사례다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h3 id="vi-tier-1-7">VI. 경제학 — Tier 1 (7개)<a class="headerlink" href="#vi-tier-1-7" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="71-supply-and-demand">#71 수요와 공급 (Supply and Demand)<a class="headerlink" href="#71-supply-and-demand" title="Permanent link">&para;</a></h4>
+<p>재화와 서비스의 가격은 공급자와 수요자의 상호작용에 의해 결정된다는 경제학의 가장 기본적이고 강력한 모델이다. 멍거는 Talk 2에서 이를 첫 번째로 꼽을 만큼 중요한 미시경제학 모델로 강조했다. 특히 '가격 결정력(pricing power)'의 유무, 즉 공급 부족이나 대체 불가성에 의해 가격을 올려도 수요가 크게 줄지 않는 구조를 가진 기업이 위대한 투자 대상이 된다. 코카콜라, 시즈 캔디 같이 멍거가 투자한 기업들이 모두 강한 가격 결정력을 가진 이유가 여기에 있다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="72-opportunity-cost">#72 기회비용 (Opportunity Cost)<a class="headerlink" href="#72-opportunity-cost" title="Permanent link">&para;</a></h4>
+<p>어떤 선택을 함으로써 포기하게 되는 최선의 대안적 가치다. 진정한 비용은 지출한 금액이 아니라 그 자원으로 할 수 있었던 최선의 다른 것이다. 멍거는 모든 투자 결정을 "버크셔 해서웨이 전체의 수익률"이라는 기회비용과 비교해야 한다고 강조했다. "이 투자가 좋다"는 것만으로는 충분하지 않다—"이것이 내가 할 수 있는 가장 좋은 투자인가"를 물어야 한다. 이 개념은 시간 배분에도 동일하게 적용된다—무엇을 하기로 결정하는 것은 다른 무언가를 하지 않기로 결정하는 것이다.</p>
+<p><em>출처: PCA Talk 2 및 다수 강연 ★★★★★</em></p>
+<hr />
+<h4 id="74-scale-economies">#74 규모의 경제 (Scale Economies)<a class="headerlink" href="#74-scale-economies" title="Permanent link">&para;</a></h4>
+<p>생산 규모가 커질수록 단위당 비용이 하락하는 현상이다. 고정비를 더 많은 단위로 나누고, 구매력을 통한 원가 협상력이 높아지며, 생산 공정의 전문화가 가능해지기 때문이다. 멍거는 이것을 Talk 2에서 "공급 측 규모의 경제(supply-side scale)"라고 명명했다. 월마트가 수십 년간 경쟁자를 압도한 것, 아마존이 물류 네트워크를 통해 모든 소매업을 위협하는 것이 모두 규모의 경제가 해자로 작동하는 사례다. 그러나 규모는 저절로 이점이 되는 것이 아니라, 비용 절감을 고객에게 전달하는 선순환 구조가 함께 작동해야 한다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="75-network-effects">#75 네트워크 효과 (Network Effects)<a class="headerlink" href="#75-network-effects" title="Permanent link">&para;</a></h4>
+<p>사용자가 늘어날수록 각 사용자가 얻는 서비스의 가치가 증가하는 현상이다. 멍거는 Talk 2에서 이것을 "수요 측 규모의 경제(demand-side scale)"라고 불렀다. 전화기가 세상에 한 대만 있으면 무용지물이지만 모든 사람이 가지면 엄청난 가치가 생기는 것이 이 원리의 핵심이다. 비자카드, 마스터카드, 운영체제, 소셜미디어 플랫폼이 모두 강력한 네트워크 효과로 방어된다. 일단 임계 규모에 도달한 네트워크는 후발주자가 이기기 거의 불가능한 해자를 형성한다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="77-competitive-advantage-economic-moat">#77 경쟁우위 / 해자 (Competitive Advantage / Economic Moat)<a class="headerlink" href="#77-competitive-advantage-economic-moat" title="Permanent link">&para;</a></h4>
+<p>경쟁자가 쉽게 모방하거나 침식할 수 없는 지속적인 우위를 의미한다. 워런 버핏이 "해자(moat)"라는 비유를 사용했고, 멍거가 이를 투자 핵심 기준으로 함께 정립했다. 해자의 원천은 크게 네 가지다: ①브랜드 파워(소비자 충성도), ②네트워크 효과, ③전환 비용(고객이 바꾸기 어려운 구조), ④원가 우위(규모 또는 접근성). 멍거는 "훌륭한 기업을 적당한 가격에 사는 것이, 적당한 기업을 훌륭한 가격에 사는 것보다 낫다"고 말했다. 이것이 벤저민 그레이엄의 가치투자에서 멍거/버핏식 품질 투자로의 전환을 나타내는 핵심 원칙이다.</p>
+<p><em>출처: 다수 강연 및 주주총회 ★★★★★</em></p>
+<hr />
+<h4 id="82-incentive-structures">#82 인센티브 구조 (Incentive Structures)<a class="headerlink" href="#82-incentive-structures" title="Permanent link">&para;</a></h4>
+<p>보상과 처벌의 구조가 인간의 행동을 가장 강력하게 결정한다는 원리다. 멍거의 가장 유명한 격언 중 하나인 "show me the incentive and I'll show you the outcome"이 이 모델의 본질을 담고 있다. 기업 경영에서 잘못된 인센티브는—예컨대 단기 EPS 기반 보너스—경영자가 장기 가치를 희생해 단기 이익을 부풀리도록 유도한다. 투자 분석 시 경영진 보상 구조, 이사회 구성, 주주 친화적 자본 배분 정책을 확인하는 것이 이 모델의 실전 적용이다.</p>
+<p><em>출처: PCA Talk 2 및 전 강연 ★★★★★</em></p>
+<hr />
+<h4 id="86-mr-market">#86 미스터 마켓 (Mr. Market)<a class="headerlink" href="#86-mr-market" title="Permanent link">&para;</a></h4>
+<p>벤저민 그레이엄이 제시하고 멍거·버핏이 반복 인용한 개념으로, 주식 시장을 조울증적 파트너로 의인화한 비유다. 미스터 마켓은 매일 아침 당신의 지분을 사거나 팔겠다고 제안하는데, 어떤 날은 지나치게 낙관적으로 높은 가격을, 어떤 날은 지나치게 비관적으로 낮은 가격을 제시한다. 투자자의 역할은 이 제안에 휘둘리는 것이 아니라, 비합리적으로 낮은 가격을 제시할 때 매수하고 비합리적으로 높은 가격을 제시할 때 매도할 기회로 활용하는 것이다. 시장의 단기 가격 변동은 정보가 아니라 기회다.</p>
+<p><em>출처: PCA 및 버크셔 주주 서한 ★★★★★</em></p>
+<hr />
+<h3 id="vii-tier-1-7">VII. 사고 도구 — Tier 1 (7개)<a class="headerlink" href="#vii-tier-1-7" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="93-inversion">#93 역발상 (Inversion)<a class="headerlink" href="#93-inversion" title="Permanent link">&para;</a></h4>
+<p>문제를 순방향("어떻게 성공할까?")이 아닌 역방향("어떻게 하면 반드시 실패하는가?")으로 뒤집어 생각하는 방법이다. 멍거의 트레이드마크로, 독일 수학자 칼 야코비의 "Invert, always invert"를 즐겨 인용했다. 성공을 직접 추구하는 것보다 실패의 원인을 먼저 제거하는 것이 더 확실하고 안전한 접근법인 경우가 많다. 예컨대 "어떻게 좋은 삶을 살까?"보다 "어떻게 하면 불행해지는가?"를 먼저 답하고 그것을 피하면 된다. 투자에서는 "이 투자가 왜 실패할 수 있는가?"를 먼저 논증한 후 그 반박이 충분한지 확인한다. ※ Via Negativa(#124)는 이 역발상 철학의 라틴 철학적 확장이다.</p>
+<p><em>출처: 전 강연, Farnam Street ★★★★★</em></p>
+<hr />
+<h4 id="96-circle-of-competence">#96 능력 범위 (Circle of Competence)<a class="headerlink" href="#96-circle-of-competence" title="Permanent link">&para;</a></h4>
+<p>자신이 깊이 이해하고 있는 영역과 그렇지 않은 영역의 경계를 명확히 인식하고, 자신이 이해하는 영역 안에서만 중요한 결정을 내리는 원칙이다. 멍거와 버핏이 함께 정립한 개념으로, "능력 범위의 크기보다 그 경계를 정확히 아는 것이 더 중요하다"고 강조했다. 이 원칙은 '겸손'이 아니라 '전략적 집중'이다—자신이 우위를 가진 좁은 영역에서 최선의 결정을 내리는 것이 넓은 영역에서 평균적 결정을 내리는 것보다 훨씬 낫다. 버크셔가 자신들이 이해하기 어려운 기술 기업에 오랫동안 투자하지 않은 것이 이 원칙의 실천이다.</p>
+<p><em>출처: 다수 강연 및 주주총회 ★★★★★</em></p>
+<hr />
+<h4 id="97-checklist-thinking">#97 체크리스트 사고 (Checklist Thinking)<a class="headerlink" href="#97-checklist-thinking" title="Permanent link">&para;</a></h4>
+<p>복잡한 의사결정에서 중요한 고려사항을 빠뜨리지 않기 위해 표준화된 체크리스트를 활용하는 방법이다. 멍거는 항공기 조종사와 외과 의사가 체크리스트로 치명적 실수를 방지하듯, 투자 결정에도 체크리스트가 필수라고 강조했다. 이것은 사용하지 않으면 잃는 경향(#18)을 방어하는 수단이기도 하다. 체크리스트는 지능이 아닌 시스템을 통해 일관성과 완전성을 확보한다. 멍거 자신도 기업 분석 시 수십 가지 항목의 체크리스트를 사용했다고 알려져 있다.</p>
+<p><em>출처: 다수 강연 ★★★★★</em></p>
+<hr />
+<h4 id="98-two-track-analysis">#98 이중 경로 분석 (Two-Track Analysis)<a class="headerlink" href="#98-two-track-analysis" title="Permanent link">&para;</a></h4>
+<p>모든 의사결정을 두 가지 경로로 동시에 분석하는 방법이다. Track 1은 합리적 경로—팩트, 숫자, 인센티브 구조, 논리를 기반으로 분석한다. Track 2는 심리적 경로—무의식적 편향, 감정, 사회적 압력이 분석을 어떻게 왜곡하고 있는지를 점검한다. 멍거는 Talk 2에서 "이 두 경로를 모두 거치지 않으면 결코 현명한 분석가가 될 수 없다"고 명시했다. 훌륭한 분석가는 자신의 논리뿐 아니라 자신의 심리 상태도 함께 분석한다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="102-multidisciplinary-thinking-latticework">#102 다학문적 사고 / 격자틀 (Multidisciplinary Thinking / Latticework)<a class="headerlink" href="#102-multidisciplinary-thinking-latticework" title="Permanent link">&para;</a></h4>
+<p>멍거가 직접 조어하고 평생 강조한 핵심 철학이다. 수학, 물리학, 화학, 생물학, 심리학, 경제학 등 다양한 학문의 핵심 모델들을 하나의 격자 구조(latticework)로 연결하여, 어떤 문제도 여러 각도에서 동시에 분석하는 사고 방식이다. 망치만 든 사람에게는 모든 것이 못으로 보이듯, 단일 학문의 도구만 사용하는 전문가는 그 도구로 해결되지 않는 문제를 잘못 진단한다. 멍거는 이것이 전문가 교육의 가장 큰 결함이라고 비판했다. 이 모델 목록 전체가 바로 이 격자틀을 구성하는 요소들이다.</p>
+<p><em>출처: PCA Talk 2 (직접 명명) ★★★★★</em></p>
+<hr />
+<h4 id="103-decision-trees">#103 의사결정 나무 (Decision Trees)<a class="headerlink" href="#103-decision-trees" title="Permanent link">&para;</a></h4>
+<p>가능한 결정과 그 결과를 나무 구조로 시각화하여, 각 경로의 확률과 결과값의 곱(기대값)을 비교하는 분석 도구다. 멍거는 Talk 2에서 이것을 확률론, 기대값과 함께 묶어 강조했다. 예컨대 신약 개발 투자를 결정할 때 임상 1상 통과 확률 70%, 2상 50%, 3상 40%, FDA 승인 70%를 순차적으로 곱하면 전체 성공 확률은 약 10%임을 알 수 있다. 이처럼 직관으로는 놓치기 쉬운 복합 확률을 명시적으로 계산하는 것이 결정 나무의 핵심 가치다.</p>
+<p><em>출처: PCA Talk 2 ★★★★★</em></p>
+<hr />
+<h4 id="108-man-with-a-hammer-syndrome">#108 망치 든 사람 증후군 (Man-with-a-Hammer Syndrome)<a class="headerlink" href="#108-man-with-a-hammer-syndrome" title="Permanent link">&para;</a></h4>
+<p>한 가지 도구나 이론만 알고 있으면 모든 문제를 그 도구로 해결하려는 경향이다. 멍거가 직접 조어한 표현으로, "망치를 든 사람에게는 모든 것이 못으로 보인다"는 속담을 차용했다. 이것이 바로 단일 학문에만 의존하는 전문가의 근본적 한계다. 경제학자는 모든 것을 인센티브로, 심리학자는 모든 것을 편향으로, 공학자는 모든 것을 시스템 최적화 문제로 보려 한다. 다학문적 격자틀(#102)은 이 증후군을 방지하기 위한 직접적 대응책이다.</p>
+<p><em>출처: 다수 강연, Farnam Street ★★★★★</em></p>
+<hr />
+<hr />
+<h2 id="tier-2-43">🟡 TIER 2 — 멍거 사고 체계 포함, 간접 언급 (43개)<a class="headerlink" href="#tier-2-43" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>멍거가 해당 학문 분야를 강조하거나 개념을 활용했으나, 해당 용어를 이 이름으로 직접 명명한 기록이 명확하지 않은 모델들. 또는 멍거가 반복 인용한 타 사상가의 개념.</p>
+</blockquote>
+<hr />
+<h3 id="ii-a-7">II-A. 수학·통계 (7개)<a class="headerlink" href="#ii-a-7" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="33-statistics-distributions">#33 통계 및 분포 (Statistics &amp; Distributions)<a class="headerlink" href="#33-statistics-distributions" title="Permanent link">&para;</a></h4>
+<p>데이터가 어떤 형태로 분포하는지 이해하는 능력이다. 정규분포(종형 곡선)는 키·몸무게처럼 중앙값 주위에 결과가 몰리는 경우를 설명하고, 멱함수 분포(fat-tail)는 극단적 사건이 예상보다 훨씬 자주 발생하는 현상을 설명한다. 금융 시장은 정규분포보다 훨씬 두꺼운 꼬리를 가진다—블랙 먼데이(1987), 글로벌 금융위기(2008) 같은 사건은 정규분포로 예측하면 수백만 년에 한 번 일어날 사건이지만 실제로는 수십 년마다 발생한다. 멍거는 "평균에만 집중하는 사람은 분포의 꼬리에서 파산한다"고 경고했다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="34-regression-to-the-mean">#34 평균으로의 회귀 (Regression to the Mean)<a class="headerlink" href="#34-regression-to-the-mean" title="Permanent link">&para;</a></h4>
+<p>통계적 극단값은 시간이 지나면 평균으로 돌아오는 경향이다. 신장이 매우 큰 부모의 자녀는 평균적으로 부모보다 작은 경향이 있고, 탁월한 성과를 낸 펀드 매니저는 다음 해에는 평균에 가까워지는 경향이 있다. 이 원리를 모르면 극단적 성과를 영속적인 것으로 착각하거나, 일시적 부진을 구조적 실패로 오해한다. 투자에서는 "최근 5년 최고 수익률 펀드"가 향후 5년에는 대체로 평균으로 회귀한다는 것을 인지하는 것이 핵심 적용이다.</p>
+<p><em>출처: Farnam Street, sourcesofinsight.com ★★★★☆</em></p>
+<hr />
+<h4 id="35-base-rates">#35 기본율 / 기저율 (Base Rates)<a class="headerlink" href="#35-base-rates" title="Permanent link">&para;</a></h4>
+<p>개별 사례를 판단하기 전에 유사한 사례 전체의 역사적 통계 확률을 먼저 확인하는 방법이다. 새로 창업하는 식당의 성공 가능성을 판단할 때 그 식당의 메뉴와 입지만 볼 것이 아니라, "식당의 5년 생존율이 역사적으로 20%"라는 기저율을 먼저 참고해야 한다. 멍거는 사람들이 생생한 개별 사례에 집착하여 통계적 기저율을 무시하는 오류(기저율 무시, base rate neglect)를 반복적으로 경고했다. 기업 분석에서는 "이 산업에서 신규 진입자가 10년 후 살아남는 확률은 얼마인가"를 먼저 파악하는 것이 기저율 활용의 실천이다.</p>
+<p><em>출처: Farnam Street, PCA 간접 언급 ★★★★☆ | ※ 기저율 무시 편향과 동전의 양면</em></p>
+<hr />
+<h4 id="36-expected-value">#36 기대값 (Expected Value)<a class="headerlink" href="#36-expected-value" title="Permanent link">&para;</a></h4>
+<p>각 가능한 결과에 그 결과의 확률을 곱하여 합산한 값으로, 불확실한 상황에서 합리적 선택의 기준이 된다. 기대값 = Σ(결과값 × 확률). 90%의 확률로 10만 원을 얻거나 10%의 확률로 100만 원을 잃는 선택의 기대값은 9만 원 - 10만 원 = -1만 원으로 불리한 베팅이다. 멍거는 "훌륭한 투자자는 확률에 가격을 매길 줄 아는 사람"이라고 말했다. 중요한 것은 단순히 "이길 가능성이 높은가"가 아니라 "이길 때의 이익과 질 때의 손실을 확률로 가중한 합이 양수인가"다.</p>
+<p><em>출처: PCA Talk 2 간접 언급, Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="37-power-laws-pareto-principle">#37 멱함수 법칙 / 파레토 법칙 (Power Laws / Pareto Principle)<a class="headerlink" href="#37-power-laws-pareto-principle" title="Permanent link">&para;</a></h4>
+<p>결과의 80%가 원인의 20%에서 비롯된다는 비선형적 분포 원리다. 더 일반적으로는 소수의 요인이 대다수의 결과를 지배하는 멱함수적 관계를 의미한다. 벤처캐피털 펀드에서는 투자 기업의 10%가 전체 수익의 90%를 만들어내고, 버핏/멍거의 포트폴리오에서도 소수의 결정적 투자가 총 성과를 결정했다. 멍거는 "집중 투자"를 선호한 이유 중 하나가 바로 이 원리다—분산하면 멱함수적 승자를 충분히 보유하기 어렵다.</p>
+<p><em>출처: Farnam Street, sourcesofinsight.com ★★★★☆</em></p>
+<hr />
+<h4 id="38-bayesian-updating">#38 베이즈 업데이트 (Bayesian Updating)<a class="headerlink" href="#38-bayesian-updating" title="Permanent link">&para;</a></h4>
+<p>새로운 증거가 나타날 때마다 기존 믿음(사전 확률)을 체계적으로 수정하여 더 정확한 믿음(사후 확률)을 도출하는 통계적 추론 방법이다. 핵심은 "새로운 정보는 기존 판단을 완전히 뒤집는 것이 아니라, 확률을 적절히 조정하는 것"이다. 멍거는 "새 증거가 나오면 믿음을 바꾸어야 한다"고 반복 강조했으며, 이것이 확증 편향(#106)에 대한 처방이다. 투자에서는 기업에 대한 초기 판단을 가지고 있더라도, 분기 실적·경영진 변화·경쟁 환경 변화 같은 새 정보가 나올 때마다 가중치를 업데이트해야 한다.</p>
+<p><em>출처: Farnam Street, PCA 간접 언급 ★★★★☆</em></p>
+<hr />
+<h4 id="39-margin-of-safety">#39 안전 마진 (Margin of Safety)<a class="headerlink" href="#39-margin-of-safety" title="Permanent link">&para;</a></h4>
+<p>벤저민 그레이엄이 정립하고 멍거가 핵심 원칙으로 수용한 개념이다. 기업의 내재가치보다 충분히 낮은 가격에 매수함으로써 분석 오류, 예상치 못한 사건, 미래의 불확실성에 대한 완충재를 확보하는 원칙이다. 내재가치가 100만 원이라고 계산했다면 60~70만 원에 사야 안전 마진이 확보된다. 이 원칙의 정신은 투자에만 국한되지 않는다—교량 설계에서 예상 하중의 몇 배를 견디도록 설계하는 것, 의료 처방에서 독성 수준보다 훨씬 낮은 용량을 처방하는 것이 모두 안전 마진의 원리다.</p>
+<p><em>출처: PCA 및 버크셔 문헌, Farnam Street ★★★★☆</em></p>
+<hr />
+<h3 id="ii-b-5">II-B. 물리학·공학 (5개)<a class="headerlink" href="#ii-b-5" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="47-redundancy-backup-systems">#47 이중 안전장치 (Redundancy / Backup Systems)<a class="headerlink" href="#47-redundancy-backup-systems" title="Permanent link">&para;</a></h4>
+<p>핵심 시스템이 실패했을 때를 대비해 이중·삼중의 백업 구조를 설계하는 원칙이다. 항공기의 유압 시스템, 원자력 발전소의 냉각 장치, 우주선의 생명 유지 장치가 모두 다중 백업을 갖추는 이유가 여기에 있다. 멍거는 이 공학적 원리를 개인의 삶과 사업에도 적용했다—재정적 여유(현금 보유), 건강 관리, 대인 관계의 다양화가 삶의 여분(redundancy)이다. 버크셔가 막대한 현금을 보유하는 이유 중 하나도 금융 위기 시 기회를 잡기 위한 전략적 중복성이다.</p>
+<p><em>출처: Farnam Street, PCA 간접 언급 ★★★★☆</em></p>
+<hr />
+<h4 id="48-leverage">#48 지렛대 원리 (Leverage)<a class="headerlink" href="#48-leverage" title="Permanent link">&para;</a></h4>
+<p>작은 힘으로 큰 결과를 만들어내는 물리적 지렛대 원리를 다양한 영역에 적용한 모델이다. 재정적 레버리지(부채)는 자기 자본 이상의 수익을 가능하게 하지만 동시에 손실도 증폭시킨다. 지식 레버리지는 한 번 습득한 원리를 수천 가지 상황에 적용하게 해준다. 멍거는 금융 레버리지에 대해서는 매우 보수적이었다—"빌린 돈으로 투자해서 파산한 천재를 나는 많이 봤다." 반면 지식·인간관계·평판의 레버리지는 적극적으로 활용하라고 권했다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="49-inertia">#49 관성 (Inertia)<a class="headerlink" href="#49-inertia" title="Permanent link">&para;</a></h4>
+<p>정지한 물체는 계속 정지하려 하고, 운동하는 물체는 계속 같은 방향으로 운동하려는 뉴턴의 제1법칙을 조직과 인간 행동에 적용한 모델이다. 조직은 현재의 방향을 유지하려는 강한 관성을 가진다—"기관의 명령(Institutional Imperative, #116)"이 이 관성의 조직적 표현이다. 성공한 기업이 변화에 실패하는 가장 흔한 이유가 관성이다. 개인 수준에서는 나쁜 습관이 지속되는 이유이기도 하다. 관성을 이겨내려면 시스템 차원의 변화—환경 설계, 새로운 루틴 구축—가 의지력보다 훨씬 효과적이다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="50-entropy-thermodynamics">#50 엔트로피 (Entropy / Thermodynamics)<a class="headerlink" href="#50-entropy-thermodynamics" title="Permanent link">&para;</a></h4>
+<p>열역학 제2법칙에 따르면 닫힌 시스템의 무질서도(엔트로피)는 시간이 지날수록 증가한다. 에너지와 노력을 지속적으로 투입하지 않으면 모든 시스템은 쇠퇴한다. 기업, 인간관계, 개인의 기술, 조직 문화가 모두 방치되면 엔트로피가 증가해 질서가 무너진다. 멍거는 이 원리를 역으로 활용했다—"위대한 기업은 지속적인 재투자와 개선 없이는 유지될 수 없다"는 것이다. 버크셔가 자회사의 지속적 자본 배분을 중시하는 이유가 여기에 있다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="51-equilibrium">#51 균형 (Equilibrium)<a class="headerlink" href="#51-equilibrium" title="Permanent link">&para;</a></h4>
+<p>물리·화학·경제 시스템에서 상충하는 힘들이 균형 상태에 도달하려는 경향이다. 시장에서 초과 수익은 경쟁자를 끌어들여 결국 수익률이 평균으로 수렴한다. 과도하게 인기 있는 자산 클래스에는 자금이 몰려 수익률이 하락하고, 기피받는 자산은 매력적 수준까지 하락한다. 멍거는 균형 개념을 활용해 "초과 수익이 지속되는 기업에는 반드시 강한 해자가 있어야 한다"는 논리를 도출했다—해자 없이는 경쟁이 균형으로 수렴시키기 때문이다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h3 id="ii-c-2">II-C. 화학 (2개)<a class="headerlink" href="#ii-c-2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="62-activation-energy">#62 활성화 에너지 (Activation Energy)<a class="headerlink" href="#62-activation-energy" title="Permanent link">&para;</a></h4>
+<p>화학 반응이 시작되려면 반응물이 넘어야 할 최소 에너지 장벽이다. 촉매는 이 장벽을 낮추어 반응을 쉽게 시작되게 한다. 인간 행동에서도 동일한 원리가 작동한다—운동을 시작하지 못하는 이유는 의지 부족이 아니라 높은 활성화 에너지(헬스장까지 가는 번거로움, 운동복 찾기)다. 디자인적으로 활성화 에너지를 낮추면—운동화를 침대 옆에 두기—행동 확률이 크게 높아진다. 투자에서는 분석 루틴의 마찰을 줄이고 나쁜 결정의 마찰을 높이는 환경 설계가 이 원리의 적용이다.</p>
+<p><em>출처: Farnam Street, Safal Niveshak ★★★☆☆</em></p>
+<hr />
+<h4 id="63-catalysis">#63 촉매 작용 (Catalysis)<a class="headerlink" href="#63-catalysis" title="Permanent link">&para;</a></h4>
+<p>자신은 소모되지 않으면서 화학 반응의 속도를 크게 높이는 물질이 촉매다. 비즈니스에서 촉매는 규칙 변화, 기술 혁신, 플랫폼이 될 수 있다. 스마트폰은 앱 경제, 모바일 결제, 공유 경제를 동시에 촉진한 촉매였다. ※ 자기 촉매 작용(#61)과의 차이: 자기 촉매는 반응 생성물이 스스로 촉매가 되는 자기 강화 메커니즘이고, 촉매 작용은 외부 요소가 반응을 가속하는 것이다. 투자에서는 특정 기업이나 산업의 성장을 촉진할 외부 촉매를 식별하는 것이 핵심 분석 과제다.</p>
+<p><em>출처: PCA Talk 2 간접 언급, Farnam Street ★★★☆☆</em></p>
+<hr />
+<h3 id="ii-d-5">II-D. 생물학·진화 (5개)<a class="headerlink" href="#ii-d-5" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="66-ecological-niches">#66 생태적 지위 (Ecological Niches)<a class="headerlink" href="#66-ecological-niches" title="Permanent link">&para;</a></h4>
+<p>생태계에서 각 종이 특정 자원, 먹이, 환경 조건을 독점하는 고유한 역할과 위치다. 같은 숲에서도 독수리는 상공을, 올빼미는 야간을, 박쥐는 동굴을 각자의 생태적 지위로 점유한다. 비즈니스에서는 틈새 시장(niche market) 전략과 동일한 원리다—거대 시장에서 대기업과 정면 경쟁하는 것보다 자신만의 생태적 지위를 찾아 독점하는 것이 더 유리하다. 멍거가 좋아하는 소기업들, 예를 들어 지역 독점 신문이나 특정 산업 전문 보험사가 이 원리의 사업적 표현이다.</p>
+<p><em>출처: PCA 간접 언급, Safal Niveshak ★★★☆☆</em></p>
+<hr />
+<h4 id="67-competitive-exclusion-principle">#67 경쟁적 배제 원리 (Competitive Exclusion Principle)<a class="headerlink" href="#67-competitive-exclusion-principle" title="Permanent link">&para;</a></h4>
+<p>동일한 생태적 지위를 두고 경쟁하는 두 종은 장기적으로 공존할 수 없으며, 결국 하나가 다른 하나를 배제한다는 생물학 원리다. 비즈니스에서는 동일한 고객, 동일한 가격대, 동일한 기능을 제공하는 두 기업 중 하나만 살아남는 승자독식 현상으로 나타난다. 운영체제 시장(Windows vs. Mac vs. Linux), 검색 시장(Google의 압도적 점유율)이 이 원리의 표현이다. 투자에서는 "이 기업이 경쟁자와 진정으로 차별화된 생태적 지위를 가지고 있는가"를 묻는 것이 핵심 질문이다.</p>
+<p><em>출처: Safal Niveshak, PCA 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="68-red-queen-effect">#68 붉은 여왕 효과 (Red Queen Effect)<a class="headerlink" href="#68-red-queen-effect" title="Permanent link">&para;</a></h4>
+<p>루이스 캐럴의 《거울 나라의 앨리스》에서 붉은 여왕이 "제자리에 있으려면 계속 달려야 한다"고 말한 것처럼, 생태계에서 모든 종이 동시에 진화하기 때문에 상대적 생존을 위해서는 끊임없이 개선해야 한다는 원리다. 기업 경쟁에서 현상 유지는 사실상 후퇴다—경쟁자들이 계속 개선하고 있기 때문이다. 반도체 산업에서 무어의 법칙을 따라가지 못한 기업들이 도태된 것, 소매업에서 아마존의 물류 혁신을 따라가지 못한 기업들이 파산한 것이 이 원리의 사례다.</p>
+<p><em>출처: Safal Niveshak, Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="69-symbiosis-ecosystem-thinking">#69 공생 / 생태계 사고 (Symbiosis / Ecosystem Thinking)<a class="headerlink" href="#69-symbiosis-ecosystem-thinking" title="Permanent link">&para;</a></h4>
+<p>서로 다른 종이 상호 이익을 주고받으며 공존하는 공생 관계와, 이를 넘어 전체 생태계를 시스템으로 바라보는 사고 방식이다. 비즈니스 생태계에서는 플랫폼(애플 앱스토어)과 개발자, 유통업체와 제조업체, 보험사와 재보험사가 공생 관계를 형성한다. 멍거는 버크셔의 자회사들이 서로 독립적으로 운영되면서도 자본 배분이라는 공생 구조를 통해 전체가 강화되도록 설계했다. 투자 분석에서는 개별 기업을 넘어 그 기업이 속한 생태계 전체의 건전성을 평가해야 한다.</p>
+<p><em>출처: Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="70-adaptation">#70 적응 (Adaptation)<a class="headerlink" href="#70-adaptation" title="Permanent link">&para;</a></h4>
+<p>유기체가 환경 변화에 맞게 형질, 행동, 전략을 변화시키는 과정이다. 생존에 성공한 종은 강한 종이 아니라 변화에 가장 잘 적응한 종이다(다윈). 기업에서는 기술 변화, 규제 변화, 소비자 취향 변화에 적응하지 못한 기업이 도태된다. 코닥, 블록버스터, 노키아의 몰락이 적응 실패의 교훈이다. 멍거는 버크셔가 섬유 회사에서 보험·금융·소비재 복합기업으로 변신한 것 자체가 적응의 성공이라고 말했다.</p>
+<p><em>출처: PCA 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h3 id="ii-e-12">II-E. 경제학·미시경제 (12개)<a class="headerlink" href="#ii-e-12" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="73-comparative-advantage">#73 비교우위 (Comparative Advantage)<a class="headerlink" href="#73-comparative-advantage" title="Permanent link">&para;</a></h4>
+<p>절대적 능력이 낮더라도 상대적으로 더 잘하는 분야에 특화하면 모두가 이익을 얻을 수 있다는 리카도의 원리다. 예컨대 변호사가 타자도 더 잘 친다 해도 변호 업무에만 집중하고 타자는 비서에게 맡기는 것이 더 효율적이다. 멍거는 이 원리를 투자 포트폴리오 구성에도 적용했다—모든 영역에서 잘하려 하지 말고 자신의 능력 범위(#96) 안에서 집중하라. 국가 차원에서는 자유무역의 이론적 근거이며, 개인 차원에서는 위임·협업의 근거다.</p>
+<p><em>출처: PCA Talk 9 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="76-creative-destruction">#76 창조적 파괴 (Creative Destruction)<a class="headerlink" href="#76-creative-destruction" title="Permanent link">&para;</a></h4>
+<p>슘페터가 정립한 개념으로, 혁신적 기술과 사업 모델이 기존 산업과 기업을 파괴하면서 경제 성장을 이끈다는 원리다. 자동차가 마차 산업을, 스트리밍이 DVD 대여업을, 스마트폰이 디지털 카메라를 파괴한 것이 전형적 사례다. 멍거는 해자의 내구성을 평가할 때 이 원리를 핵심 기준으로 활용했다—"이 기업의 해자는 10년 후 창조적 파괴에 의해 무너질 수 있는가?" 버크셔가 기술 기업 투자에 신중했던 이유 중 하나가 기술의 창조적 파괴 속도가 너무 빠르기 때문이었다.</p>
+<p><em>출처: PCA Talk 9 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="78-switching-costs">#78 전환 비용 (Switching Costs)<a class="headerlink" href="#78-switching-costs" title="Permanent link">&para;</a></h4>
+<p>고객이 현재 제품이나 서비스에서 경쟁사 제품으로 전환할 때 발생하는 금전적·시간적·심리적 비용이다. 전환 비용이 높을수록 고객 이탈이 어렵고 가격 결정력이 강해진다. 기업용 ERP 소프트웨어(SAP, Oracle)는 한번 도입하면 수백억의 전환 비용이 발생해 거의 교체하지 않는다. ※ 해자(#77)의 핵심 구성 요소 중 하나이지만, 독립적 분석 기준으로도 중요하다. 투자 분석에서 "이 기업의 고객은 얼마나 쉽게 떠날 수 있는가"를 묻는 것이 전환 비용 평가의 핵심이다.</p>
+<p><em>출처: Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="79-price-elasticity">#79 가격 탄력성 (Price Elasticity)<a class="headerlink" href="#79-price-elasticity" title="Permanent link">&para;</a></h4>
+<p>가격이 변할 때 수요가 얼마나 민감하게 반응하는지를 측정하는 개념이다. 탄력성이 낮은(비탄력적) 제품은 가격을 올려도 수요가 크게 줄지 않아 강한 가격 결정력을 의미한다. 멍거가 시즈 캔디를 높이 평가한 이유 중 하나가 이것이다—시즈 캔디는 매년 가격을 올려도 수요가 유지되는 강력한 브랜드 충성도를 가지고 있었다. 반대로 가격에 극도로 민감한 상품(휘발유, 곡물, 철강)은 단위 수익이 낮고 경쟁이 치열하여 투자 매력도가 낮다.</p>
+<p><em>출처: Farnam Street, PCA 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="80-marginal-utility">#80 한계 효용 (Marginal Utility)<a class="headerlink" href="#80-marginal-utility" title="Permanent link">&para;</a></h4>
+<p>재화를 한 단위 추가로 소비할 때 얻는 만족감의 변화다. 일반적으로 소비가 늘수록 한계 효용은 감소한다(한계 효용 체감의 법칙). 매우 배고플 때 첫 번째 빵이 주는 만족이 다섯 번째 빵보다 훨씬 크다. 투자 측면에서는 자본이 많아질수록 추가 자본이 가져다주는 한계 효용이 감소한다—이것이 소규모 투자자가 대형 기관보다 특정 소형주에서 더 높은 수익률을 올릴 수 있는 이유다. 멍거는 이 원리를 자신의 투자 규모 확대에 따른 수익률 하락을 설명하는 데 활용했다.</p>
+<p><em>출처: Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="81-game-theory">#81 게임 이론 (Game Theory)<a class="headerlink" href="#81-game-theory" title="Permanent link">&para;</a></h4>
+<p>합리적 참여자들이 상대방의 선택을 고려하여 최적 전략을 선택하는 상황을 수학적으로 분석하는 이론이다. 죄수의 딜레마(개인 합리성이 집단적 비합리성으로 귀결), 내쉬 균형(어느 쪽도 전략을 바꿀 인센티브가 없는 상태), 반복 게임(장기 관계에서는 협력이 지배 전략이 됨)이 핵심 개념이다. 멍거는 협력과 경쟁의 선택, 가격 전쟁의 동학, 협상 전략 분석에 게임 이론적 사고를 적용했다. 버크셔가 피인수 기업의 경영자에게 자율성을 보장하는 것은 반복 게임에서 협력을 유도하는 전략이다.</p>
+<p><em>출처: PCA 간접 언급, Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="83-principal-agent-problem">#83 주인-대리인 문제 (Principal-Agent Problem)<a class="headerlink" href="#83-principal-agent-problem" title="Permanent link">&para;</a></h4>
+<p>대리인(경영자, 직원, 브로커)의 이익이 본인(주주, 고객)의 이익과 불일치할 때 발생하는 구조적 문제다. 이 문제는 인센티브 구조(#82)와 직결된다—대리인이 본인의 이익이 아닌 자신의 이익을 극대화하도록 동기 부여되어 있으면 대리인 문제가 심각해진다. 멍거는 이 문제의 해결책으로 두 가지를 강조했다: ①경영진이 자사주를 대량 보유하게 하여 주주와 이해를 일치시킬 것, ②성과 기반 보상보다 장기적 가치 창출에 연동된 보상 구조를 설계할 것.</p>
+<p><em>출처: PCA 간접 언급, Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="84-adverse-selection">#84 역선택 (Adverse Selection)<a class="headerlink" href="#84-adverse-selection" title="Permanent link">&para;</a></h4>
+<p>정보 비대칭 상황에서 나쁜 품질의 상품이나 고위험 주체가 시장에 더 많이 몰리는 현상이다. 조지 애컬로프의 "레몬 시장" 이론이 이를 설명한다—중고차 시장에서 판매자는 차의 품질을 알지만 구매자는 모르기 때문에, 구매자는 낮은 가격만 제시하고 좋은 차를 가진 판매자는 시장을 떠나 결국 나쁜 차만 남는다. 보험에서는 건강이 좋은 사람보다 아픈 사람이 더 많이 가입하려 한다. 멍거는 거래 상대방이 정보 우위를 가진 상황을 경계하라고 강조했다.</p>
+<p><em>출처: PCA Talk 9 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="85-moral-hazard">#85 도덕적 해이 (Moral Hazard)<a class="headerlink" href="#85-moral-hazard" title="Permanent link">&para;</a></h4>
+<p>위험의 결과를 자신이 아닌 타인이 부담하게 될 때 더 위험한 행동을 취하는 경향이다. 보험 가입 후 더 부주의해지거나, 정부 구제(bail-out)를 기대하는 금융기관이 더 큰 리스크를 감수하는 것이 전형적 사례다. 2008년 금융위기는 모기지를 판매한 은행들이 그 리스크를 증권화하여 타인에게 전가할 수 있었기 때문에 심화되었다—도덕적 해이의 시스템 차원 발현이다. 멍거는 보험 사업에서 이 문제를 관리하는 것이 핵심 역량이라고 강조했다.</p>
+<p><em>출처: PCA Talk 9 간접 언급 ★★★☆☆</em></p>
+<hr />
+<h4 id="87-intrinsic-value">#87 내재가치 (Intrinsic Value)<a class="headerlink" href="#87-intrinsic-value" title="Permanent link">&para;</a></h4>
+<p>기업이 미래에 창출할 현금흐름을 현재 가치로 할인한 값으로, 시장 가격과 무관하게 기업의 실질적 경제적 가치를 나타낸다. 벤저민 그레이엄이 정립하고 멍거·버핏이 투자의 핵심 기준으로 삼은 개념이다. 내재가치 계산은 복잡하지 않지만 정확하지 않다—멍거는 "대략적으로 옳은 것이 정확하게 틀린 것보다 훨씬 낫다"고 말했다. 내재가치보다 낮은 가격에 사는 것이 투자의 본질이며, 이것이 안전 마진(#39)과 결합될 때 가장 강력해진다.</p>
+<p><em>출처: PCA 및 버크셔 문헌 ★★★★☆</em></p>
+<hr />
+<h4 id="91-greshams-law">#91 그레셤의 법칙 (Gresham's Law)<a class="headerlink" href="#91-greshams-law" title="Permanent link">&para;</a></h4>
+<p>"악화(나쁜 화폐)가 양화(좋은 화폐)를 구축한다"는 화폐경제학 원리로, 더 넓게는 나쁜 것이 좋은 것을 몰아내는 역선택적 동학을 설명한다. 인플레이션 시대에 사람들은 금화를 보관하고 지폐만 유통시킨다. 조직에서는 성과주의가 약화될 때 무능한 직원이 유능한 직원을 몰아내고, 나쁜 관행이 좋은 관행을 대체한다. 멍거는 기업 문화에서 나쁜 행동에 대한 묵인이 어떻게 조직 전체를 오염시키는지 설명할 때 이 원리를 활용했다.</p>
+<p><em>출처: 멍거 강연 간접 언급, Farnam Street ★★★☆☆</em></p>
+<hr />
+<h4 id="92-accounting-fundamentals">#92 회계의 기초 (Accounting Fundamentals)<a class="headerlink" href="#92-accounting-fundamentals" title="Permanent link">&para;</a></h4>
+<p>손익계산서(Income Statement), 대차대조표(Balance Sheet), 현금흐름표(Cash Flow Statement)의 세 가지 재무제표를 이해하고 그 이면의 경제적 실체를 읽어내는 능력이다. 멍거는 "회계는 비즈니스의 언어"라고 말했으며, 재무제표를 읽지 못하면서 투자하는 것은 지도 없이 낯선 나라를 여행하는 것과 같다고 했다. 특히 순이익보다 실제 현금 창출 능력(free cash flow)이, EBITDA보다 실제 자본 배분이 더 중요하다고 강조했다. 회계 지식이 없으면 경영진이 이익을 어떻게 조작할 수 있는지도 파악하지 못한다.</p>
+<p><em>출처: PCA Talk 2 간접 언급 ★★★★☆</em></p>
+<hr />
+<h3 id="ii-f-9">II-F. 사고 도구·일반 논리 (9개)<a class="headerlink" href="#ii-f-9" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="94-1-first-principles-thinking">#94 제1원칙 사고 (First Principles Thinking)<a class="headerlink" href="#94-1-first-principles-thinking" title="Permanent link">&para;</a></h4>
+<p>기존의 관습, 가정, 유추를 모두 제거하고 가장 근본적인 사실에서 출발하여 논리적으로 재구성하는 사고 방식이다. 아리스토텔레스가 정립했고 데카르트, 파인만, 머스크가 실천한 방법이다. "다들 그렇게 하니까"가 아니라 "왜 그렇게 해야 하는가?"를 물어 밑바닥부터 다시 설계한다. 멍거의 다학문적 격자틀(#102) 자체가 제1원칙 사고의 산물이다—기존의 단일 학문 접근법을 거부하고 "어떤 사고 도구가 진정으로 유용한가"를 처음부터 물었기 때문이다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="95-2-second-order-thinking">#95 2차적 사고 (Second-Order Thinking)<a class="headerlink" href="#95-2-second-order-thinking" title="Permanent link">&para;</a></h4>
+<p>행동의 직접적 결과(1차 결과) 너머에 있는, 그 결과가 만들어내는 또 다른 결과(2차 결과)를 고려하는 사고 방식이다. "그래서 그다음엔 어떻게 되는가?(And then what?)"를 반복해서 묻는 것이 이 방법의 핵심이다. 예컨대 임대료 규제(1차: 세입자에게 저렴한 주거비)는 공급 감소와 주거 품질 하락(2차)을 낳는다. 멍거는 "가장 단순한 대답이 틀리는 이유는 2차 효과를 무시하기 때문"이라고 말했다. 투자에서는 단기 주가 상승이 아닌 장기 사업 가치 창출의 연쇄 효과를 분석하는 것이 2차적 사고다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="99-occams-razor">#99 오컴의 면도날 (Occam's Razor)<a class="headerlink" href="#99-occams-razor" title="Permanent link">&para;</a></h4>
+<p>동일한 현상을 설명하는 여러 가설 중, 불필요한 가정이 가장 적은 단순한 설명이 옳을 가능성이 높다는 원칙이다. 14세기 철학자 윌리엄 오컴에서 유래했다. 과학적 방법론의 핵심이며, 복잡한 설명을 선호하는 인간의 편향(지적 과시욕)을 교정하는 도구다. 투자에서는 복잡한 매크로 시나리오에 의존한 투자 논리보다 단순하고 명확한 사업 경쟁우위에 근거한 투자가 더 신뢰할 수 있다. 멍거의 투자 원칙 자체도 극히 단순하다—"좋은 사람들이 운영하는 훌륭한 기업을 적정 가격에 사라."</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="100-hanlons-razor">#100 핸런의 면도날 (Hanlon's Razor)<a class="headerlink" href="#100-hanlons-razor" title="Permanent link">&para;</a></h4>
+<p>악의로 설명될 수 있는 현상도 어리석음(무능, 실수)으로 충분히 설명된다면 악의를 먼저 가정하지 말라는 원칙이다. 대부분의 나쁜 결과는 음모나 악의가 아니라 무지, 부주의, 시스템 실패에서 비롯된다. 이 원칙은 귀인 오류(다른 사람의 행동을 상황 요인이 아닌 성격 탓으로 돌리는 경향)를 교정한다. 투자에서는 기업이 실망스러운 실적을 낼 때 "경영진이 우리를 속이고 있다"고 가정하기 전에 "경쟁 환경이 어려워졌거나 경영 실수가 있었던 것"을 먼저 고려해야 한다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="101-falsifiability">#101 반증 가능성 / 반증 증거 탐색 (Falsifiability)<a class="headerlink" href="#101-falsifiability" title="Permanent link">&para;</a></h4>
+<p>칼 포퍼가 정립한 과학적 사고의 핵심으로, 자신의 가설을 지지하는 증거보다 반박하는 증거를 적극적으로 탐색하는 방법이다. 반증 불가능한 이론은 과학이 아니라 믿음이다. 멍거는 다윈이 자신의 진화론을 반박하는 사례를 특히 열심히 수집했다는 사실을 자신의 역할 모델로 삼았다. 투자에서는 "이 투자가 왜 성공할 것인가"를 논증하는 데만 에너지를 쓰는 것이 아니라, "이 투자가 왜 실패할 수 있는가"를 먼저 강하게 논증해야 한다. 이것이 역발상(#93)과 함께 사용될 때 가장 강력하다.</p>
+<p><em>출처: Farnam Street, PCA 간접 언급 ★★★★☆</em></p>
+<hr />
+<h4 id="104-survivorship-bias">#104 생존자 편향 (Survivorship Bias)<a class="headerlink" href="#104-survivorship-bias" title="Permanent link">&para;</a></h4>
+<p>성공하여 살아남은 사례만 관찰할 수 있고, 실패하여 소멸한 사례는 보이지 않기 때문에 현실을 왜곡하여 인식하는 편향이다. 2차 세계대전에서 귀환한 전투기의 탄흔 위치만 분석하여 그 부위를 강화하려 했지만, 아브라함 왈드는 "돌아오지 못한 비행기들은 우리가 보지 못하는 다른 부위에 맞았을 것"이라고 지적했다. 투자에서는 살아남은 펀드들의 평균 수익률이 실제 투자자가 경험하는 평균 수익률보다 훨씬 높은 이유가 여기에 있다—실패한 펀드들은 청산되어 통계에서 사라지기 때문이다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="105-anchoring-bias">#105 닻 내림 편향 (Anchoring Bias)<a class="headerlink" href="#105-anchoring-bias" title="Permanent link">&para;</a></h4>
+<p>처음 접한 정보(닻)가 이후 모든 판단의 기준점이 되어, 그 기준에서 충분히 멀어지지 못하는 경향이다. 카너먼과 트버스키의 실험에서 룰렛 숫자를 먼저 본 피험자들이 그 숫자에 근거하여 전혀 무관한 추정치를 제시했다. 협상에서 먼저 숫자를 제시하는 쪽이 유리한 이유가 닻 내림 효과 때문이다. 투자에서는 주식의 52주 고점이나 매수 단가가 닻으로 작용해 "이 가격에 팔 수 없다"는 비합리적 판단을 만든다. 멍거는 매수 단가를 의식적으로 무시하고 현재의 내재가치만을 기준으로 삼으라고 강조했다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="106-confirmation-bias">#106 확증 편향 (Confirmation Bias)<a class="headerlink" href="#106-confirmation-bias" title="Permanent link">&para;</a></h4>
+<p>기존 믿음이나 가설을 지지하는 정보는 적극적으로 탐색하고 수용하는 반면, 반박하는 정보는 무시하거나 과소평가하는 경향이다. 인간은 근본적으로 자신이 옳다는 것을 확인하고 싶어하기 때문에 이 편향은 의식적 노력 없이는 극복하기 어렵다. 이 편향은 불일치 회피 경향(#5)과 결합될 때 더욱 강화된다. 멍거는 확증 편향을 방지하기 위해 "반대 입장을 자신이 가장 강하게 논증해 보는 것"을 권장했으며, 반증 가능성(#101) 탐색이 그 처방이다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h4 id="107-hindsight-bias">#107 사후 확신 편향 (Hindsight Bias)<a class="headerlink" href="#107-hindsight-bias" title="Permanent link">&para;</a></h4>
+<p>과거 사건의 결과를 알게 된 후 "나는 처음부터 그렇게 될 줄 알았다"고 믿는 경향이다. 이것은 과거 예측의 어려움을 과소평가하고 자신의 예측 능력을 과대평가하게 만든다. 결과적으로 미래에 대한 자신감은 과도해지고, 과거의 성공이 실력인지 운인지를 구별하지 못하게 된다. 투자에서는 "애플이 이렇게 성공할 줄 알았어야 했다"는 식의 사후 판단이 현재의 예측 능력에 대한 과신으로 이어진다. 멍거는 의사결정의 질을 결과가 아닌 과정으로 평가하라고 강조했다.</p>
+<p><em>출처: Farnam Street ★★★★☆</em></p>
+<hr />
+<h3 id="ii-g-1">II-G. 사회학·조직행동 (1개)<a class="headerlink" href="#ii-g-1" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="116-institutional-imperative">#116 기관의 명령 (Institutional Imperative)<a class="headerlink" href="#116-institutional-imperative" title="Permanent link">&para;</a></h4>
+<p>조직은 현재의 방향, 전략, 구조를 유지하려는 강한 본능적 관성을 가진다는 원리다. 워런 버핏이 1989년 주주 서한에서 처음 명명했고, 멍거가 공동으로 발전시킨 개념이다. 이 명령 하에서는 ①리더의 전략에 저항하는 것이 어렵고, ②사용 가능한 자금이 있으면 어떤 식으로든 집행되고, ③리더가 원하는 방향으로 재무 예측이 맞춰지고, ④동종 업계의 행동을 맹목적으로 모방한다. 멍거는 이 명령에 저항할 수 있는 경영자가 진정으로 탁월한 경영자라고 말했다.</p>
+<p><em>출처: 버크셔 주주 서한, PCA ★★★★☆</em></p>
+<hr />
+<h3 id="ii-h-2">II-H. 철학·역사 (2개)<a class="headerlink" href="#ii-h-2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="124-via-negativa">#124 부정의 길 (Via Negativa)<a class="headerlink" href="#124-via-negativa" title="Permanent link">&para;</a></h4>
+<p>무엇을 추가할지보다 무엇을 제거할지에 집중하는 철학적 원칙이다. 라틴어로 "부정의 방법"을 의미하며, 스토아 철학과 나심 탈레브가 강조한 개념이기도 하다. 멍거의 역발상(#93)이 "어떻게 실패하는지를 먼저 생각하는" 문제 해결 방법론이라면, Via Negativa는 "나쁜 것을 제거하면 좋은 것만 남는다"는 삶의 철학적 원리다. 실수를 피하는 것이 탁월함을 추구하는 것보다 더 확실한 성과로 이어진다는 것이 멍거 투자 철학의 근간이다. ※ 역발상(#93)의 철학적 확장 개념으로 상호 보완적으로 활용된다.</p>
+<p><em>출처: Farnam Street, Safal Niveshak ★★★☆☆</em></p>
+<hr />
+<h4 id="125-historical-analogies">#125 역사적 유추 (Historical Analogies)<a class="headerlink" href="#125-historical-analogies" title="Permanent link">&para;</a></h4>
+<p>현재 상황과 유사한 역사적 선례를 참조하여 결과를 예측하고 교훈을 도출하는 방법이다. 마크 트웨인의 "역사는 반복되지 않지만 운율은 맞는다"는 말이 이 모델의 정신을 담고 있다. 멍거는 광범위한 역사 독서를 통해 "이 상황이 과거의 어떤 상황과 유사한가"를 식별하는 능력을 계발했다. 현재의 AI 붐이 1990년대 인터넷 버블과 어떻게 유사하고 다른지, 현재의 인플레이션이 1970년대와 어떻게 비교되는지를 분석하는 것이 이 모델의 실전 적용이다.</p>
+<p><em>출처: PCA 간접 언급 ★★★☆☆</em></p>
+<hr />
+<hr />
+<h2 id="_2">📚 출처 및 참고 자료<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-primary-sources">1차 문헌 (Primary Sources) ★★★★★<a class="headerlink" href="#1-primary-sources" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>문헌</th>
+<th>해당 모델</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Poor Charlie's Almanack, Talk 2: "Elementary Worldly Wisdom"</strong> (1994 USC 강연)</td>
+<td>#30–32, #45–46, #61, #64–65, #71–72, #74–75, #82, #96–98, #102–103</td>
+</tr>
+<tr>
+<td><strong>Poor Charlie's Almanack, Talk 7: "The Psychology of Human Misjudgment"</strong> (1995)</td>
+<td>#1–25 (25개 심리 경향 전체)</td>
+</tr>
+<tr>
+<td><strong>Poor Charlie's Almanack, Talk 9: "Academic Economics"</strong> (2003 UC Santa Barbara)</td>
+<td>#73, #76, #84, #85</td>
+</tr>
+<tr>
+<td><strong>버크셔 해서웨이 주주총회 발언</strong> (연도별)</td>
+<td>#77, #86, #93, #96, #108</td>
+</tr>
+<tr>
+<td><strong>버크셔 해서웨이 주주 서한</strong></td>
+<td>#86, #116 (Institutional Imperative는 1989년 서한)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-secondary-sources">2차 문헌 — 검증된 분석 소스 (Secondary Sources) ★★★★☆<a class="headerlink" href="#2-secondary-sources" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>소스</th>
+<th>URL</th>
+<th>주요 활용 모델</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Farnam Street (fs.blog)</strong></td>
+<td>https://fs.blog/mental-models/</td>
+<td>#33–39, #47–51, #66–70, #94–95, #99–101, #104–107</td>
+</tr>
+<tr>
+<td><strong>Farnam Street — Psychology of Human Misjudgment</strong></td>
+<td>https://fs.blog/great-talks/psychology-human-misjudgment/</td>
+<td>#1–25 원문 분석</td>
+</tr>
+<tr>
+<td><strong>allencheng.com — 25 Cognitive Biases</strong></td>
+<td>https://www.allencheng.com/25-cognitive-biases-charlie-munger/</td>
+<td>#1–25 직접 분석</td>
+</tr>
+<tr>
+<td><strong>sloww.co — Psychology of Human Misjudgment</strong></td>
+<td>https://www.sloww.co/psychology-human-misjudgment-charlie-munger/</td>
+<td>#1–25 해설</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-tertiary-sources">3차 문헌 — 투자 블로그 및 큐레이션 (Tertiary Sources) ★★★☆☆<a class="headerlink" href="#3-tertiary-sources" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>소스</th>
+<th>URL</th>
+<th>주요 활용 모델</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sources of Insight (129 Models)</strong></td>
+<td>https://sourcesofinsight.com/charlie-munger-mental-models/</td>
+<td>#35, #37, #40, #91</td>
+</tr>
+<tr>
+<td><strong>Safal Niveshak — Latticework Checklist</strong></td>
+<td>https://www.safalniveshak.com/latticework-of-mental-models-checklist/</td>
+<td>#62–63, #66–70, #124</td>
+</tr>
+<tr>
+<td><strong>JD Meier — Munger Mental Models</strong></td>
+<td>https://jdmeier.com/charlie-mungers-mental-models-for-leadership-judgment/</td>
+<td>#78, #81, #83–85</td>
+</tr>
+</tbody>
+</table>
+<h3 id="github">GitHub 소스 ★★☆☆☆<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>레포지토리</th>
+<th>URL</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mental-models/Munger-s-Mental-Models</td>
+<td>https://github.com/mental-models/Munger-s-Mental-Models</td>
+<td>Tren Griffin 편집</td>
+</tr>
+<tr>
+<td>AdrienLemaire/awesome-mental-models</td>
+<td>https://github.com/AdrienLemaire/awesome-mental-models</td>
+<td>일반 큐레이션</td>
+</tr>
+<tr>
+<td>mahavak.github.io/models</td>
+<td>https://mahavak.github.io/models/</td>
+<td>멍거 래티스워크 분석</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">📋 전체 모델 인덱스 (가나다순)<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>한국어 명칭</th>
+<th>영문명</th>
+<th>Tier</th>
+<th>#</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가격 탄력성</td>
+<td>Price Elasticity</td>
+<td>2</td>
+<td>79</td>
+</tr>
+<tr>
+<td>가용성 오가중 경향</td>
+<td>Availability-Misweighing Tendency</td>
+<td>1</td>
+<td>17</td>
+</tr>
+<tr>
+<td>게임 이론</td>
+<td>Game Theory</td>
+<td>2</td>
+<td>81</td>
+</tr>
+<tr>
+<td>경쟁우위 / 해자</td>
+<td>Competitive Advantage / Economic Moat</td>
+<td>1</td>
+<td>77</td>
+</tr>
+<tr>
+<td>경쟁적 배제 원리</td>
+<td>Competitive Exclusion Principle</td>
+<td>2</td>
+<td>67</td>
+</tr>
+<tr>
+<td>고통 회피 심리적 부정</td>
+<td>Pain-Avoiding Psychological Denial</td>
+<td>1</td>
+<td>11</td>
+</tr>
+<tr>
+<td>공생 / 생태계 사고</td>
+<td>Symbiosis / Ecosystem Thinking</td>
+<td>2</td>
+<td>69</td>
+</tr>
+<tr>
+<td>과도한 자기 평가 경향</td>
+<td>Excessive Self-Regard Tendency</td>
+<td>1</td>
+<td>12</td>
+</tr>
+<tr>
+<td>관성</td>
+<td>Inertia</td>
+<td>2</td>
+<td>49</td>
+</tr>
+<tr>
+<td>균형</td>
+<td>Equilibrium</td>
+<td>2</td>
+<td>51</td>
+</tr>
+<tr>
+<td>그레셤의 법칙</td>
+<td>Gresham's Law</td>
+<td>2</td>
+<td>91</td>
+</tr>
+<tr>
+<td>기관의 명령</td>
+<td>Institutional Imperative</td>
+<td>2</td>
+<td>116</td>
+</tr>
+<tr>
+<td>기대값</td>
+<td>Expected Value</td>
+<td>2</td>
+<td>36</td>
+</tr>
+<tr>
+<td>기본율 / 기저율</td>
+<td>Base Rates</td>
+<td>2</td>
+<td>35</td>
+</tr>
+<tr>
+<td>내재가치</td>
+<td>Intrinsic Value</td>
+<td>2</td>
+<td>87</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>Network Effects</td>
+<td>1</td>
+<td>75</td>
+</tr>
+<tr>
+<td>노화 오영향 경향</td>
+<td>Senescence-Misinfluence Tendency</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>다학문적 사고 / 격자틀</td>
+<td>Multidisciplinary Thinking / Latticework</td>
+<td>1</td>
+<td>102</td>
+</tr>
+<tr>
+<td>단순 연상 영향 경향</td>
+<td>Influence-from-Mere-Association Tendency</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>대비 오반응 경향</td>
+<td>Contrast-Misreaction Tendency</td>
+<td>1</td>
+<td>15</td>
+</tr>
+<tr>
+<td>도덕적 해이</td>
+<td>Moral Hazard</td>
+<td>2</td>
+<td>85</td>
+</tr>
+<tr>
+<td>롤라팔루자 경향</td>
+<td>Lollapalooza Tendency</td>
+<td>1</td>
+<td>24</td>
+</tr>
+<tr>
+<td>망치 든 사람 증후군</td>
+<td>Man-with-a-Hammer Syndrome</td>
+<td>1</td>
+<td>108</td>
+</tr>
+<tr>
+<td>멱함수 법칙 (80-20)</td>
+<td>Power Laws / Pareto Principle</td>
+<td>2</td>
+<td>37</td>
+</tr>
+<tr>
+<td>미스터 마켓</td>
+<td>Mr. Market Metaphor</td>
+<td>1</td>
+<td>86</td>
+</tr>
+<tr>
+<td>박탈 과잉반응 경향</td>
+<td>Deprival-Superreaction Tendency</td>
+<td>1</td>
+<td>13</td>
+</tr>
+<tr>
+<td>반증 가능성</td>
+<td>Falsifiability</td>
+<td>2</td>
+<td>101</td>
+</tr>
+<tr>
+<td>베이즈 업데이트</td>
+<td>Bayesian Updating</td>
+<td>2</td>
+<td>38</td>
+</tr>
+<tr>
+<td>보상·처벌 과잉반응 경향</td>
+<td>Reward &amp; Punishment Superresponse Tendency</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>복리</td>
+<td>Compound Interest</td>
+<td>1</td>
+<td>30</td>
+</tr>
+<tr>
+<td>부정의 길</td>
+<td>Via Negativa</td>
+<td>2</td>
+<td>124</td>
+</tr>
+<tr>
+<td>불일치 회피 경향</td>
+<td>Inconsistency-Avoidance Tendency</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>붉은 여왕 효과</td>
+<td>Red Queen Effect</td>
+<td>2</td>
+<td>68</td>
+</tr>
+<tr>
+<td>비교우위</td>
+<td>Comparative Advantage</td>
+<td>2</td>
+<td>73</td>
+</tr>
+<tr>
+<td>사고 실험 (사용되지 않는 모델)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>사용하지 않으면 잃는 경향</td>
+<td>Use-It-or-Lose-It Tendency</td>
+<td>1</td>
+<td>18</td>
+</tr>
+<tr>
+<td>사전 확신 편향</td>
+<td>Hindsight Bias</td>
+<td>2</td>
+<td>107</td>
+</tr>
+<tr>
+<td>사회적 증거 경향</td>
+<td>Social Proof Tendency</td>
+<td>1</td>
+<td>14</td>
+</tr>
+<tr>
+<td>생존자 편향</td>
+<td>Survivorship Bias</td>
+<td>2</td>
+<td>104</td>
+</tr>
+<tr>
+<td>생태적 지위</td>
+<td>Ecological Niches</td>
+<td>2</td>
+<td>66</td>
+</tr>
+<tr>
+<td>스트레스 영향 경향</td>
+<td>Stress-Influence Tendency</td>
+<td>1</td>
+<td>16</td>
+</tr>
+<tr>
+<td>시기·질투 경향</td>
+<td>Envy/Jealousy Tendency</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>싫어함·증오 경향</td>
+<td>Disliking/Hating Tendency</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>안전 마진</td>
+<td>Margin of Safety</td>
+<td>2</td>
+<td>39</td>
+</tr>
+<tr>
+<td>약물 오영향 경향</td>
+<td>Drug-Misinfluence Tendency</td>
+<td>1</td>
+<td>19</td>
+</tr>
+<tr>
+<td>역발상</td>
+<td>Inversion</td>
+<td>1</td>
+<td>93</td>
+</tr>
+<tr>
+<td>역사적 유추</td>
+<td>Historical Analogies</td>
+<td>2</td>
+<td>125</td>
+</tr>
+<tr>
+<td>역선택</td>
+<td>Adverse Selection</td>
+<td>2</td>
+<td>84</td>
+</tr>
+<tr>
+<td>엔트로피</td>
+<td>Entropy / Thermodynamics</td>
+<td>2</td>
+<td>50</td>
+</tr>
+<tr>
+<td>오컴의 면도날</td>
+<td>Occam's Razor</td>
+<td>2</td>
+<td>99</td>
+</tr>
+<tr>
+<td>요인 이유 존중 경향</td>
+<td>Reason-Respecting Tendency</td>
+<td>1</td>
+<td>23</td>
+</tr>
+<tr>
+<td>이분법 통제 (제외됨)</td>
+<td>—</td>
+<td>Tier 3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>이중 경로 분석</td>
+<td>Two-Track Analysis</td>
+<td>1</td>
+<td>98</td>
+</tr>
+<tr>
+<td>이중 안전장치</td>
+<td>Redundancy / Backup Systems</td>
+<td>2</td>
+<td>47</td>
+</tr>
+<tr>
+<td>임계 질량</td>
+<td>Critical Mass</td>
+<td>1</td>
+<td>45</td>
+</tr>
+<tr>
+<td>임계점·전환점</td>
+<td>Breakpoints / Tipping Points</td>
+<td>1</td>
+<td>46</td>
+</tr>
+<tr>
+<td>잡담 경향</td>
+<td>Twaddle Tendency</td>
+<td>1</td>
+<td>22</td>
+</tr>
+<tr>
+<td>자기 촉매 작용</td>
+<td>Autocatalysis</td>
+<td>1</td>
+<td>61</td>
+</tr>
+<tr>
+<td>자연선택</td>
+<td>Natural Selection</td>
+<td>1</td>
+<td>64</td>
+</tr>
+<tr>
+<td>전환 비용</td>
+<td>Switching Costs</td>
+<td>2</td>
+<td>78</td>
+</tr>
+<tr>
+<td>제1원칙 사고</td>
+<td>First Principles Thinking</td>
+<td>2</td>
+<td>94</td>
+</tr>
+<tr>
+<td>주인-대리인 문제</td>
+<td>Principal-Agent Problem</td>
+<td>2</td>
+<td>83</td>
+</tr>
+<tr>
+<td>지렛대 원리</td>
+<td>Leverage</td>
+<td>2</td>
+<td>48</td>
+</tr>
+<tr>
+<td>창조적 파괴</td>
+<td>Creative Destruction</td>
+<td>2</td>
+<td>76</td>
+</tr>
+<tr>
+<td>체크리스트 사고</td>
+<td>Checklist Thinking</td>
+<td>1</td>
+<td>97</td>
+</tr>
+<tr>
+<td>촉매 작용</td>
+<td>Catalysis</td>
+<td>2</td>
+<td>63</td>
+</tr>
+<tr>
+<td>칸트식 공정성 경향</td>
+<td>Kantian Fairness Tendency</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>통계 및 분포</td>
+<td>Statistics &amp; Distributions</td>
+<td>2</td>
+<td>33</td>
+</tr>
+<tr>
+<td>파블로프식 연상 조건화</td>
+<td>Pavlovian Association / Conditioning</td>
+<td>1</td>
+<td>25</td>
+</tr>
+<tr>
+<td>평균으로의 회귀</td>
+<td>Regression to the Mean</td>
+<td>2</td>
+<td>34</td>
+</tr>
+<tr>
+<td>핸런의 면도날</td>
+<td>Hanlon's Razor</td>
+<td>2</td>
+<td>100</td>
+</tr>
+<tr>
+<td>호기심 경향</td>
+<td>Curiosity Tendency</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>호혜성 경향</td>
+<td>Reciprocation Tendency</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>확률론</td>
+<td>Probability Theory</td>
+<td>1</td>
+<td>31</td>
+</tr>
+<tr>
+<td>확증 편향</td>
+<td>Confirmation Bias</td>
+<td>2</td>
+<td>106</td>
+</tr>
+<tr>
+<td>활성화 에너지</td>
+<td>Activation Energy</td>
+<td>2</td>
+<td>62</td>
+</tr>
+<tr>
+<td>회계의 기초</td>
+<td>Accounting Fundamentals</td>
+<td>2</td>
+<td>92</td>
+</tr>
+<tr>
+<td>2차적 사고</td>
+<td>Second-Order Thinking</td>
+<td>2</td>
+<td>95</td>
+</tr>
+<tr>
+<td>권위 오영향 경향</td>
+<td>Authority-Misinfluence Tendency</td>
+<td>1</td>
+<td>21</td>
+</tr>
+<tr>
+<td>규모의 경제</td>
+<td>Scale Economies</td>
+<td>1</td>
+<td>74</td>
+</tr>
+<tr>
+<td>기관의 명령</td>
+<td>Institutional Imperative</td>
+<td>2</td>
+<td>116</td>
+</tr>
+<tr>
+<td>기회비용</td>
+<td>Opportunity Cost</td>
+<td>1</td>
+<td>72</td>
+</tr>
+<tr>
+<td>닻 내림 편향</td>
+<td>Anchoring Bias</td>
+<td>2</td>
+<td>105</td>
+</tr>
+<tr>
+<td>능력 범위</td>
+<td>Circle of Competence</td>
+<td>1</td>
+<td>96</td>
+</tr>
+<tr>
+<td>대비 오반응 경향</td>
+<td>Contrast-Misreaction Tendency</td>
+<td>1</td>
+<td>15</td>
+</tr>
+<tr>
+<td>수요와 공급</td>
+<td>Supply and Demand</td>
+<td>1</td>
+<td>71</td>
+</tr>
+<tr>
+<td>순열과 조합</td>
+<td>Permutations &amp; Combinations</td>
+<td>1</td>
+<td>32</td>
+</tr>
+<tr>
+<td>적응</td>
+<td>Adaptation</td>
+<td>2</td>
+<td>70</td>
+</tr>
+<tr>
+<td>좋아함·사랑 경향</td>
+<td>Liking/Loving Tendency</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>현대 다윈 종합 이론</td>
+<td>Modern Darwinian Synthesis</td>
+<td>1</td>
+<td>65</td>
+</tr>
+<tr>
+<td>한계 효용</td>
+<td>Marginal Utility</td>
+<td>2</td>
+<td>80</td>
+</tr>
+<tr>
+<td>공유지의 비극 (제외됨)</td>
+<td>—</td>
+<td>Tier 3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>인센티브 구조</td>
+<td>Incentive Structures</td>
+<td>1</td>
+<td>82</td>
+</tr>
+<tr>
+<td>의사결정 나무</td>
+<td>Decision Trees</td>
+<td>1</td>
+<td>103</td>
+</tr>
+<tr>
+<td>의심 회피 경향</td>
+<td>Doubt-Avoidance Tendency</td>
+<td>1</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>작성일: 2026-02-21</em>
+<em>구성: Tier 1 (47개, 멍거 직접 언급) + Tier 2 (43개, 멍거 사고 체계 포함)</em>
+<em>총 90개 | 중복·재무지표(#88/#89/#90) 제외 | 가나다순 인덱스 포함</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="assets/session-tracker.js"></script>
+      
+    
+  </body>
+</html>
