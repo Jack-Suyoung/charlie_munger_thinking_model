@@ -1,0 +1,76 @@
+site_name: 찰리 멍거 멘탈 모델
+site_description: 찰리 멍거 핵심 멘탈 모델 90개 학습 가이드
+site_url: ""
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - 홈: index.md
+  - 90개 멘탈 모델: models.md
+  - 마스터 체크리스트: checklist.md
+  - 세션별 학습:
+      - 학습 가이드: sessions/index.md
+      - "01. 인센티브의 힘": sessions/session_01.md
+      - "02. 감정의 편향": sessions/session_02.md
+      - "03. 확신의 함정": sessions/session_03.md
+      - "04. 자기과신과 손실": sessions/session_04.md
+      - "05. 사회적 영향력": sessions/session_05.md
+      - "06. 환경과 습관": sessions/session_06.md
+      - "07. 호기심에서 롤라팔루자까지": sessions/session_07.md
+      - "08. 수학의 힘": sessions/session_08.md
+      - "09. 통계적 사고": sessions/session_09.md
+      - "10. 확률과 안전마진": sessions/session_10.md
+      - "11. 임계점과 폭발적 성장": sessions/session_11.md
+      - "12. 시스템의 법칙": sessions/session_12.md
+      - "13. 촉매에서 진화까지": sessions/session_13.md
+      - "14. 생태계의 경쟁": sessions/session_14.md
+      - "15. 경제학 기초": sessions/session_15.md
+      - "16. 네트워크와 해자": sessions/session_16.md
+      - "17. 경제학 심화": sessions/session_17.md
+      - "18. 투자의 본질": sessions/session_18.md
+      - "19. 역발상과 사고도구": sessions/session_19.md
+      - "20. 체크리스트와 분석": sessions/session_20.md
+      - "21. 편향과 반증": sessions/session_21.md
+      - "22. 격자틀과 통합": sessions/session_22.md
+      - 시스템 프롬프트: sessions/system_prompt.md
